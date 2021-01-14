@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
   load_resource
   before_action :set_json_format
-  before_action :load_session
+  before_action :load_session, prepend: true
 
   class NoSessionError < Exception
   end
@@ -52,6 +52,6 @@ class ApplicationController < ActionController::API
     @session = Session.find_by(token: request.headers['X-SESSION'])
     return if Rails.env.test?
 
-    raise NoSessionError unless @session
+    raise NoSessionError unless @session.present?
   end
 end
