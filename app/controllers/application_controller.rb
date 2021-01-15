@@ -1,9 +1,14 @@
 class ApplicationController < ActionController::API
   load_resource
   before_action :set_json_format
-  before_action :load_session, prepend: true
+  before_action :load_session, prepend: true, except: %i[index]
+  skip_load_resource only: :index
 
   class NoSessionError < Exception
+  end
+
+  def index
+    render html: "Veuillez vous référer à l'énoncé pour ce qui concerne l'utilisation de l'API"
   end
 
   rescue_from ActiveRecord::RecordNotDestroyed do |exception|
