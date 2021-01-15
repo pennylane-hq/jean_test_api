@@ -2,7 +2,6 @@ class ApplicationController < ActionController::API
   load_resource
   before_action :set_json_format
   before_action :load_session, prepend: true, except: %i[index]
-  skip_load_resource only: :index
 
   class NoSessionError < Exception
   end
