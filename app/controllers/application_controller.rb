@@ -13,16 +13,12 @@ class ApplicationController < ActionController::API
   rescue_from ActiveRecord::RecordNotDestroyed do |exception|
     message = exception.record.errors.details.values.flatten.map(&:values).flatten.first
 
-    respond_to do |format|
-      format.json do
-        render(
-          json: {
-            message: message,
-          },
-          status: :unprocessable_entity,
-        )
-      end
-    end
+    render(
+      json: {
+        message: message,
+      },
+      status: :unprocessable_entity,
+    )
   end
 
   rescue_from NoSessionError do

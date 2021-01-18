@@ -17,6 +17,8 @@ class Invoice < ApplicationRecord
   private
 
   def before_destroy
+    return unless finalized
+
     errors.add(:base, 'Une facture finalisée ne peut pas être supprimée')
     throw :abort if errors.present?
   end

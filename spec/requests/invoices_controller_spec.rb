@@ -22,6 +22,7 @@ describe InvoicesController do
           operator: 'search',
           value: '2',
         }].to_json }
+        expect(response.status).to eq 200
 
         expect(response.parsed[:invoices].map { _1[:id] }).to eq [invoices[2].id]
       end
@@ -33,6 +34,7 @@ describe InvoicesController do
           operator: 'search_any',
           value: '2'
         }].to_json }
+        expect(response.status).to eq 200
 
         ids = response.parsed[:invoices].map { _1[:id] }
         # 4 results:
@@ -53,6 +55,7 @@ describe InvoicesController do
           operator: 'eq',
           value: invoice2.customer_id,
         }].to_json }
+        expect(response.status).to eq 200
 
         ids = response.parsed[:invoices].map { _1[:id] }
         expect(ids.sort).to eq [invoices[0], invoice2].map(&:id)
@@ -64,6 +67,7 @@ describe InvoicesController do
           operator: 'in',
           value: invoices[0..2].map(&:customer_id),
         }].to_json }
+        expect(response.status).to eq 200
 
         ids = response.parsed[:invoices].map { _1[:id] }
         expect(ids.sort).to eq invoices[0..2].map(&:id)
@@ -82,6 +86,7 @@ describe InvoicesController do
             _destroy: true
           }]
         }}
+        expect(response.status).to eq 200
 
         expect(invoice.reload.invoice_lines.size).to eq 0
       end
@@ -96,6 +101,7 @@ describe InvoicesController do
             quantity: line.quantity + 1
           }]
         }}
+        expect(response.status).to eq 200
 
         expect(invoice.reload.invoice_lines.first.quantity).to eq(line.quantity + 1)
       end
@@ -115,9 +121,71 @@ describe InvoicesController do
             price: 100,
           }]
         }}
+        expect(response.status).to eq 200
 
         expect(invoice.reload.invoice_lines.size).to eq(line_count + 1)
       end
+    end
+  end
+
+  describe 'creating an invoice' do
+    let(:customer) { create(:customer) }
+    let(:product) { create(:product) }
+
+    it 'works properly with only a customer' do
+      post '/invoices', params: { invoice: {
+        customer_id: customer.id,
+      }}
+
+      expect(response.status).to eq 200
+    end
+
+    it 'works properly when adding all information' do
+      post '/invoices', params: { invoice: {
+        customer_id: customer.id,
+        finalized: false,
+        paid: false,
+        date: Date.current,
+        deadline: Date.current + 30.days,
+        invoice_lines_attributes: [{
+          product_id: product.id,
+          quantity: 1,
+          unit: :piece,
+          label: 'Produit',
+          vat_rate: '20',
+          price: 120,
+          tax: 20,
+        }]
+      }}
+
+      expect(response.status).to eq 200
+      id = response.parsed[:id]
+
+      invoice = Invoice.find(id)
+      expect(invoice.customer_id).to eq customer.id
+      expect(invoice.invoice_lines.size).to eq 1
+      expect(invoice.invoice_lines.first.product_id).to eq product.id
+    end
+  end
+
+  describe 'destroying an invoice' do
+    let(:invoice) { create(:invoice) }
+
+    it 'works properly' do
+      delete "/invoices/#{invoice.id}"
+      expect(response.status).to eq 204
+
+      expect(Invoice.find_by(id: invoice.id)).to eq nil
+    end
+
+    it 'shows error when applicable' do
+      invoice.update!(finalized: true)
+
+      delete "/invoices/#{invoice.id}"
+      expect(response.status).to eq 422
+      expect(response.parsed[:message]).to eq 'Une facture finalisée ne peut pas être supprimée'
+
+      expect(Invoice.find_by(id: invoice.id)).not_to eq nil
     end
   end
 end
