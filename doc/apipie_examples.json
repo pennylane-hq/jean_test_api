@@ -1,0 +1,1676 @@
+{
+  "customers#search": [
+    {
+      "title": "CustomersController#search works when searching a first_name",
+      "verb": "GET",
+      "path": "/customers/search",
+      "versions": [
+        "1.0"
+      ],
+      "query": "query=Jean",
+      "request_data": null,
+      "response_data": {
+        "customers": [
+          {
+            "id": 3810,
+            "first_name": "Jean",
+            "last_name": "Dupont",
+            "address": "12937 Schaden Island",
+            "zip_code": "21003-8916",
+            "city": "New Kelsieton",
+            "country": "Lesotho",
+            "country_code": "LS"
+          },
+          {
+            "id": 3811,
+            "first_name": "Jean",
+            "last_name": "Dupond",
+            "address": "330 Swaniawski Meadows",
+            "zip_code": "78417-9361",
+            "city": "Port Lieselotte",
+            "country": "Colombia",
+            "country_code": "CO"
+          },
+          {
+            "id": 3812,
+            "first_name": "Jean",
+            "last_name": "Bonneau",
+            "address": "20476 Kshlerin Lakes",
+            "zip_code": "42722",
+            "city": "New Tamie",
+            "country": "Gambia",
+            "country_code": "GM"
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "page_size": 25,
+          "total_pages": 1,
+          "total_entries": 3
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "CustomersController#search works when searching with a last_name case-insensitively",
+      "verb": "GET",
+      "path": "/customers/search",
+      "versions": [
+        "1.0"
+      ],
+      "query": "query=dupont",
+      "request_data": null,
+      "response_data": {
+        "customers": [
+          {
+            "id": 3814,
+            "first_name": "Martin",
+            "last_name": "Dupont",
+            "address": "691 VonRueden Run",
+            "zip_code": "23849",
+            "city": "East Neoma",
+            "country": "Syrian Arab Republic",
+            "country_code": "SY"
+          },
+          {
+            "id": 3815,
+            "first_name": "Pierre",
+            "last_name": "Dupont",
+            "address": "796 Selene Park",
+            "zip_code": "84525",
+            "city": "Murphyfort",
+            "country": "Morocco",
+            "country_code": "MA"
+          },
+          {
+            "id": 3816,
+            "first_name": "Jean",
+            "last_name": "Dupont",
+            "address": "136 Dare Mountain",
+            "zip_code": "19800",
+            "city": "North Josephshire",
+            "country": "Belgium",
+            "country_code": "BE"
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "page_size": 25,
+          "total_pages": 1,
+          "total_entries": 3
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "CustomersController#search works when searching part of last name",
+      "verb": "GET",
+      "path": "/customers/search",
+      "versions": [
+        "1.0"
+      ],
+      "query": "query=dupon",
+      "request_data": null,
+      "response_data": {
+        "customers": [
+          {
+            "id": 3820,
+            "first_name": "Martin",
+            "last_name": "Dupont",
+            "address": "3876 Dewitt Isle",
+            "zip_code": "35621-0004",
+            "city": "New Gladys",
+            "country": "Malta",
+            "country_code": "MT"
+          },
+          {
+            "id": 3821,
+            "first_name": "Pierre",
+            "last_name": "Dupont",
+            "address": "27822 Beahan Camp",
+            "zip_code": "34423",
+            "city": "New Jacinto",
+            "country": "South Georgia and the South Sandwich Islands",
+            "country_code": "GS"
+          },
+          {
+            "id": 3822,
+            "first_name": "Jean",
+            "last_name": "Dupont",
+            "address": "28751 Danette Pike",
+            "zip_code": "53142-4475",
+            "city": "South Francisstad",
+            "country": "Canada",
+            "country_code": "CA"
+          },
+          {
+            "id": 3823,
+            "first_name": "Jean",
+            "last_name": "Dupond",
+            "address": "891 Bradtke Fields",
+            "zip_code": "43578-2660",
+            "city": "Antoneside",
+            "country": "Slovakia",
+            "country_code": "SK"
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "page_size": 25,
+          "total_pages": 1,
+          "total_entries": 4
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "CustomersController#search mixes results for first and last name",
+      "verb": "GET",
+      "path": "/customers/search",
+      "versions": [
+        "1.0"
+      ],
+      "query": "query=martin",
+      "request_data": null,
+      "response_data": {
+        "customers": [
+          {
+            "id": 3826,
+            "first_name": "Martin",
+            "last_name": "Dupont",
+            "address": "671 Laurence Glen",
+            "zip_code": "71683",
+            "city": "Ellynside",
+            "country": "Malaysia",
+            "country_code": "MY"
+          },
+          {
+            "id": 3831,
+            "first_name": "Jacques",
+            "last_name": "Martin",
+            "address": "301 Schuppe Harbor",
+            "zip_code": "65166-7844",
+            "city": "Lake Sandyton",
+            "country": "Virgin Islands (British)",
+            "country_code": "VG"
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "page_size": 25,
+          "total_pages": 1,
+          "total_entries": 2
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "invoices#create": [
+    {
+      "title": "InvoicesController creating an invoice works properly with only a customer",
+      "verb": "POST",
+      "path": "/invoices",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": "invoice[customer_id]=3890",
+      "response_data": {
+        "id": 3200,
+        "customer_id": 3890,
+        "finalized": false,
+        "paid": false,
+        "date": null,
+        "deadline": null,
+        "total": "0.0",
+        "tax": "0.0",
+        "customer": {
+          "id": 3890,
+          "first_name": "Julianne",
+          "last_name": "Little",
+          "address": "891 Vernon Keys",
+          "zip_code": "89423",
+          "city": "South Chadwick",
+          "country": "Bhutan",
+          "country_code": "BT"
+        },
+        "invoice_lines": [
+
+        ]
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "InvoicesController creating an invoice works properly when adding all information",
+      "verb": "POST",
+      "path": "/invoices",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": "invoice[customer_id]=3891&invoice[finalized]=false&invoice[paid]=false&invoice[date]=2021-02-03&invoice[deadline]=2021-03-05&invoice[invoice_lines_attributes][][product_id]=11788&invoice[invoice_lines_attributes][][quantity]=1&invoice[invoice_lines_attributes][][unit]=piece&invoice[invoice_lines_attributes][][label]=Produit&invoice[invoice_lines_attributes][][vat_rate]=20&invoice[invoice_lines_attributes][][price]=120&invoice[invoice_lines_attributes][][tax]=20",
+      "response_data": {
+        "id": 3201,
+        "customer_id": 3891,
+        "finalized": false,
+        "paid": false,
+        "date": "2021-02-03",
+        "deadline": "2021-03-05",
+        "total": "120.0",
+        "tax": "20.0",
+        "customer": {
+          "id": 3891,
+          "first_name": "Nathanael",
+          "last_name": "Waelchi",
+          "address": "2339 Raynor Groves",
+          "zip_code": "58648",
+          "city": "North Tillie",
+          "country": "British Indian Ocean Territory",
+          "country_code": "IO"
+        },
+        "invoice_lines": [
+          {
+            "id": 5823,
+            "invoice_id": 3201,
+            "product_id": 11788,
+            "quantity": 1,
+            "unit": "piece",
+            "label": "Produit",
+            "vat_rate": "20",
+            "price": "120.0",
+            "tax": "20.0",
+            "product": {
+              "id": 11788,
+              "label": "Chevy Malibu",
+              "unit_price": "21585.0",
+              "unit_price_without_tax": "21585.0",
+              "unit_tax": "0.0"
+            }
+          }
+        ]
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "invoices#destroy": [
+    {
+      "title": "InvoicesController destroying an invoice works properly",
+      "verb": "DELETE",
+      "path": "/invoices/3202",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": null,
+      "code": 204,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "InvoicesController destroying an invoice shows error when applicable",
+      "verb": "DELETE",
+      "path": "/invoices/3203",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": {
+        "message": "Une facture finalisée ne peut pas être supprimée"
+      },
+      "code": 422,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "invoices#index": [
+    {
+      "title": "InvoicesController#index searching by customer works",
+      "verb": "GET",
+      "path": "/invoices",
+      "versions": [
+        "1.0"
+      ],
+      "query": "search=%5B%7B%22field%22%3A%22customer.first_name%22%2C%22operator%22%3A%22search%22%2C%22value%22%3A%222%22%7D%5D",
+      "request_data": null,
+      "response_data": {
+        "invoices": [
+          {
+            "id": 3143,
+            "customer_id": 3834,
+            "finalized": false,
+            "paid": false,
+            "date": "2021-02-03",
+            "deadline": null,
+            "total": "23065.0",
+            "tax": "832.73",
+            "customer": {
+              "id": 3834,
+              "first_name": "2",
+              "last_name": "Baumbach",
+              "address": "45888 Son Glen",
+              "zip_code": "97058",
+              "city": "East Jeffreybury",
+              "country": "Algeria",
+              "country_code": "DZ"
+            },
+            "invoice_lines": [
+              {
+                "id": 5713,
+                "invoice_id": 3143,
+                "product_id": 11679,
+                "quantity": 1,
+                "unit": "day",
+                "label": "4",
+                "vat_rate": "10",
+                "price": "9160.0",
+                "tax": "832.73",
+                "product": {
+                  "id": 11679,
+                  "label": "Toyota Prius",
+                  "unit_price": "9160.0",
+                  "unit_price_without_tax": "8327.27",
+                  "unit_tax": "832.73"
+                }
+              },
+              {
+                "id": 5714,
+                "invoice_id": 3143,
+                "product_id": 11680,
+                "quantity": 1,
+                "unit": "hour",
+                "label": "5",
+                "vat_rate": "0",
+                "price": "13905.0",
+                "tax": "0.0",
+                "product": {
+                  "id": 11680,
+                  "label": "Audi A4",
+                  "unit_price": "13905.0",
+                  "unit_price_without_tax": "13905.0",
+                  "unit_tax": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "page_size": 25,
+          "total_pages": 1,
+          "total_entries": 1
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "InvoicesController#index searching by customer works with the customer_id",
+      "verb": "GET",
+      "path": "/invoices",
+      "versions": [
+        "1.0"
+      ],
+      "query": "search=%5B%7B%22field%22%3A%22customer_id%22%2C%22operator%22%3A%22eq%22%2C%22value%22%3A3843%7D%5D",
+      "request_data": null,
+      "response_data": {
+        "invoices": [
+          {
+            "id": 3152,
+            "customer_id": 3843,
+            "finalized": false,
+            "paid": false,
+            "date": "2021-02-03",
+            "deadline": null,
+            "total": "47850.0",
+            "tax": "3064.17",
+            "customer": {
+              "id": 3843,
+              "first_name": "0",
+              "last_name": "Nader",
+              "address": "7917 Wyman Burg",
+              "zip_code": "01061-1634",
+              "city": "Kraighaven",
+              "country": "Gambia",
+              "country_code": "GM"
+            },
+            "invoice_lines": [
+              {
+                "id": 5731,
+                "invoice_id": 3152,
+                "product_id": 11697,
+                "quantity": 1,
+                "unit": "piece",
+                "label": "0",
+                "vat_rate": "0",
+                "price": "29465.0",
+                "tax": "0.0",
+                "product": {
+                  "id": 11697,
+                  "label": "Ford Mustang",
+                  "unit_price": "29465.0",
+                  "unit_price_without_tax": "29465.0",
+                  "unit_tax": "0.0"
+                }
+              },
+              {
+                "id": 5732,
+                "invoice_id": 3152,
+                "product_id": 11698,
+                "quantity": 1,
+                "unit": "hour",
+                "label": "1",
+                "vat_rate": "20",
+                "price": "18385.0",
+                "tax": "3064.17",
+                "product": {
+                  "id": 11698,
+                  "label": "Chevy Camero",
+                  "unit_price": "18385.0",
+                  "unit_price_without_tax": "15320.83",
+                  "unit_tax": "3064.17"
+                }
+              }
+            ]
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "page_size": 25,
+          "total_pages": 1,
+          "total_entries": 1
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "InvoicesController#index search_any works",
+      "verb": "GET",
+      "path": "/invoices",
+      "versions": [
+        "1.0"
+      ],
+      "query": "search=%5B%7B%22operator%22%3A%22search_any%22%2C%22value%22%3A%222%22%7D%5D",
+      "request_data": null,
+      "response_data": {
+        "invoices": [
+          {
+            "id": 3164,
+            "customer_id": 3855,
+            "finalized": false,
+            "paid": false,
+            "date": "2021-02-03",
+            "deadline": null,
+            "total": "25675.0",
+            "tax": "1375.0",
+            "customer": {
+              "id": 3855,
+              "first_name": "1",
+              "last_name": "Kulas",
+              "address": "573 Schimmel Lane",
+              "zip_code": "22518-7395",
+              "city": "Lake Jeneva",
+              "country": "Philippines",
+              "country_code": "PH"
+            },
+            "invoice_lines": [
+              {
+                "id": 5755,
+                "invoice_id": 3164,
+                "product_id": 11721,
+                "quantity": 1,
+                "unit": "day",
+                "label": "2",
+                "vat_rate": "0",
+                "price": "17425.0",
+                "tax": "0.0",
+                "product": {
+                  "id": 11721,
+                  "label": "Chevy Silverado",
+                  "unit_price": "17425.0",
+                  "unit_price_without_tax": "17425.0",
+                  "unit_tax": "0.0"
+                }
+              },
+              {
+                "id": 5756,
+                "invoice_id": 3164,
+                "product_id": 11722,
+                "quantity": 1,
+                "unit": "hour",
+                "label": "3",
+                "vat_rate": "20",
+                "price": "8250.0",
+                "tax": "1375.0",
+                "product": {
+                  "id": 11722,
+                  "label": "Nissan Pathfiner",
+                  "unit_price": "8250.0",
+                  "unit_price_without_tax": "6875.0",
+                  "unit_tax": "1375.0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 3165,
+            "customer_id": 3856,
+            "finalized": false,
+            "paid": false,
+            "date": "2021-02-03",
+            "deadline": null,
+            "total": "34175.0",
+            "tax": "4938.64",
+            "customer": {
+              "id": 3856,
+              "first_name": "2",
+              "last_name": "Hyatt",
+              "address": "7365 Florentina Overpass",
+              "zip_code": "76675",
+              "city": "New Ismaelshire",
+              "country": "Syrian Arab Republic",
+              "country_code": "SY"
+            },
+            "invoice_lines": [
+              {
+                "id": 5757,
+                "invoice_id": 3165,
+                "product_id": 11723,
+                "quantity": 1,
+                "unit": "hour",
+                "label": "4",
+                "vat_rate": "20",
+                "price": "24180.0",
+                "tax": "4030.0",
+                "product": {
+                  "id": 11723,
+                  "label": "Honda Civic",
+                  "unit_price": "24180.0",
+                  "unit_price_without_tax": "20150.0",
+                  "unit_tax": "4030.0"
+                }
+              },
+              {
+                "id": 5758,
+                "invoice_id": 3165,
+                "product_id": 11724,
+                "quantity": 1,
+                "unit": "day",
+                "label": "5",
+                "vat_rate": "10",
+                "price": "9995.0",
+                "tax": "908.64",
+                "product": {
+                  "id": 11724,
+                  "label": "Nissan Rogue",
+                  "unit_price": "9995.0",
+                  "unit_price_without_tax": "9086.36",
+                  "unit_tax": "908.64"
+                }
+              }
+            ]
+          },
+          {
+            "id": 3169,
+            "customer_id": 3860,
+            "finalized": false,
+            "paid": false,
+            "date": "2021-02-03",
+            "deadline": null,
+            "total": "29095.0",
+            "tax": "2219.17",
+            "customer": {
+              "id": 3860,
+              "first_name": "6",
+              "last_name": "Stark",
+              "address": "30095 Devora Heights",
+              "zip_code": "64598",
+              "city": "Lake Ileneshire",
+              "country": "Papua New Guinea",
+              "country_code": "PG"
+            },
+            "invoice_lines": [
+              {
+                "id": 5765,
+                "invoice_id": 3169,
+                "product_id": 11731,
+                "quantity": 1,
+                "unit": "day",
+                "label": "12",
+                "vat_rate": "20",
+                "price": "13315.0",
+                "tax": "2219.17",
+                "product": {
+                  "id": 11731,
+                  "label": "Ford Fiesta",
+                  "unit_price": "13315.0",
+                  "unit_price_without_tax": "11095.83",
+                  "unit_tax": "2219.17"
+                }
+              },
+              {
+                "id": 5766,
+                "invoice_id": 3169,
+                "product_id": 11732,
+                "quantity": 1,
+                "unit": "day",
+                "label": "13",
+                "vat_rate": "0",
+                "price": "15780.0",
+                "tax": "0.0",
+                "product": {
+                  "id": 11732,
+                  "label": "BMW 328i",
+                  "unit_price": "15780.0",
+                  "unit_price_without_tax": "15780.0",
+                  "unit_tax": "0.0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 3173,
+            "customer_id": 3864,
+            "finalized": false,
+            "paid": false,
+            "date": "2021-02-03",
+            "deadline": null,
+            "total": "41095.0",
+            "tax": "3735.91",
+            "customer": {
+              "id": 3864,
+              "first_name": "10",
+              "last_name": "Corwin",
+              "address": "64179 Dorian Avenue",
+              "zip_code": "09599-1469",
+              "city": "Jackport",
+              "country": "Iraq",
+              "country_code": "IQ"
+            },
+            "invoice_lines": [
+              {
+                "id": 5773,
+                "invoice_id": 3173,
+                "product_id": 11739,
+                "quantity": 1,
+                "unit": "hour",
+                "label": "20",
+                "vat_rate": "10",
+                "price": "29390.0",
+                "tax": "2671.82",
+                "product": {
+                  "id": 11739,
+                  "label": "Ford Mustang",
+                  "unit_price": "29390.0",
+                  "unit_price_without_tax": "26718.18",
+                  "unit_tax": "2671.82"
+                }
+              },
+              {
+                "id": 5774,
+                "invoice_id": 3173,
+                "product_id": 11740,
+                "quantity": 1,
+                "unit": "day",
+                "label": "21",
+                "vat_rate": "10",
+                "price": "11705.0",
+                "tax": "1064.09",
+                "product": {
+                  "id": 11740,
+                  "label": "Dodge Durango",
+                  "unit_price": "11705.0",
+                  "unit_price_without_tax": "10640.91",
+                  "unit_tax": "1064.09"
+                }
+              }
+            ]
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "page_size": 25,
+          "total_pages": 1,
+          "total_entries": 4
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "InvoicesController#index searching by customer_id works with eq operator",
+      "verb": "GET",
+      "path": "/invoices",
+      "versions": [
+        "1.0"
+      ],
+      "query": "search=%5B%7B%22field%22%3A%22customer_id%22%2C%22operator%22%3A%22eq%22%2C%22value%22%3A3865%7D%5D",
+      "request_data": null,
+      "response_data": {
+        "invoices": [
+          {
+            "id": 3174,
+            "customer_id": 3865,
+            "finalized": false,
+            "paid": false,
+            "date": "2021-02-03",
+            "deadline": null,
+            "total": "46625.0",
+            "tax": "2246.82",
+            "customer": {
+              "id": 3865,
+              "first_name": "0",
+              "last_name": "Bosco",
+              "address": "3077 August Mountain",
+              "zip_code": "93190",
+              "city": "Kennaberg",
+              "country": "Lesotho",
+              "country_code": "LS"
+            },
+            "invoice_lines": [
+              {
+                "id": 5775,
+                "invoice_id": 3174,
+                "product_id": 11741,
+                "quantity": 1,
+                "unit": "piece",
+                "label": "0",
+                "vat_rate": "10",
+                "price": "24715.0",
+                "tax": "2246.82",
+                "product": {
+                  "id": 11741,
+                  "label": "Ford Focus",
+                  "unit_price": "24715.0",
+                  "unit_price_without_tax": "22468.18",
+                  "unit_tax": "2246.82"
+                }
+              },
+              {
+                "id": 5776,
+                "invoice_id": 3174,
+                "product_id": 11742,
+                "quantity": 1,
+                "unit": "day",
+                "label": "1",
+                "vat_rate": "0",
+                "price": "21910.0",
+                "tax": "0.0",
+                "product": {
+                  "id": 11742,
+                  "label": "Honda Odyssey",
+                  "unit_price": "21910.0",
+                  "unit_price_without_tax": "21910.0",
+                  "unit_tax": "0.0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 3185,
+            "customer_id": 3865,
+            "finalized": false,
+            "paid": false,
+            "date": "2021-02-03",
+            "deadline": null,
+            "total": "0.0",
+            "tax": "0.0",
+            "customer": {
+              "id": 3865,
+              "first_name": "0",
+              "last_name": "Bosco",
+              "address": "3077 August Mountain",
+              "zip_code": "93190",
+              "city": "Kennaberg",
+              "country": "Lesotho",
+              "country_code": "LS"
+            },
+            "invoice_lines": [
+
+            ]
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "page_size": 25,
+          "total_pages": 1,
+          "total_entries": 2
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "InvoicesController#index searching by customer_id works with in operator",
+      "verb": "GET",
+      "path": "/invoices",
+      "versions": [
+        "1.0"
+      ],
+      "query": "search=%5B%7B%22field%22%3A%22customer_id%22%2C%22operator%22%3A%22in%22%2C%22value%22%3A%5B3876%2C3877%2C3878%5D%7D%5D",
+      "request_data": null,
+      "response_data": {
+        "invoices": [
+          {
+            "id": 3186,
+            "customer_id": 3876,
+            "finalized": false,
+            "paid": false,
+            "date": "2021-02-03",
+            "deadline": null,
+            "total": "17820.0",
+            "tax": "929.0",
+            "customer": {
+              "id": 3876,
+              "first_name": "0",
+              "last_name": "Marquardt",
+              "address": "79154 Grace Divide",
+              "zip_code": "37929",
+              "city": "Willowview",
+              "country": "Faroe Islands",
+              "country_code": "FO"
+            },
+            "invoice_lines": [
+              {
+                "id": 5797,
+                "invoice_id": 3186,
+                "product_id": 11763,
+                "quantity": 1,
+                "unit": "piece",
+                "label": "0",
+                "vat_rate": "5.5",
+                "price": "9650.0",
+                "tax": "503.08",
+                "product": {
+                  "id": 11763,
+                  "label": "Ford F150",
+                  "unit_price": "9650.0",
+                  "unit_price_without_tax": "9146.92",
+                  "unit_tax": "503.08"
+                }
+              },
+              {
+                "id": 5798,
+                "invoice_id": 3186,
+                "product_id": 11764,
+                "quantity": 1,
+                "unit": "piece",
+                "label": "1",
+                "vat_rate": "5.5",
+                "price": "8170.0",
+                "tax": "425.92",
+                "product": {
+                  "id": 11764,
+                  "label": "Dodge Charger",
+                  "unit_price": "8170.0",
+                  "unit_price_without_tax": "7744.08",
+                  "unit_tax": "425.92"
+                }
+              }
+            ]
+          },
+          {
+            "id": 3187,
+            "customer_id": 3877,
+            "finalized": false,
+            "paid": false,
+            "date": "2021-02-03",
+            "deadline": null,
+            "total": "19675.0",
+            "tax": "2618.56",
+            "customer": {
+              "id": 3877,
+              "first_name": "1",
+              "last_name": "Brekke",
+              "address": "2574 Rogahn Tunnel",
+              "zip_code": "85929",
+              "city": "North Aminamouth",
+              "country": "Mozambique",
+              "country_code": "MZ"
+            },
+            "invoice_lines": [
+              {
+                "id": 5799,
+                "invoice_id": 3187,
+                "product_id": 11765,
+                "quantity": 1,
+                "unit": "hour",
+                "label": "2",
+                "vat_rate": "20",
+                "price": "10955.0",
+                "tax": "1825.83",
+                "product": {
+                  "id": 11765,
+                  "label": "Chevy Silverado",
+                  "unit_price": "10955.0",
+                  "unit_price_without_tax": "9129.17",
+                  "unit_tax": "1825.83"
+                }
+              },
+              {
+                "id": 5800,
+                "invoice_id": 3187,
+                "product_id": 11766,
+                "quantity": 1,
+                "unit": "hour",
+                "label": "3",
+                "vat_rate": "10",
+                "price": "8720.0",
+                "tax": "792.73",
+                "product": {
+                  "id": 11766,
+                  "label": "Audi A7",
+                  "unit_price": "8720.0",
+                  "unit_price_without_tax": "7927.27",
+                  "unit_tax": "792.73"
+                }
+              }
+            ]
+          },
+          {
+            "id": 3188,
+            "customer_id": 3878,
+            "finalized": false,
+            "paid": false,
+            "date": "2021-02-03",
+            "deadline": null,
+            "total": "38835.0",
+            "tax": "3985.39",
+            "customer": {
+              "id": 3878,
+              "first_name": "2",
+              "last_name": "Quitzon",
+              "address": "3845 Na Green",
+              "zip_code": "86784",
+              "city": "North Chester",
+              "country": "Christmas Island",
+              "country_code": "CX"
+            },
+            "invoice_lines": [
+              {
+                "id": 5801,
+                "invoice_id": 3188,
+                "product_id": 11767,
+                "quantity": 1,
+                "unit": "hour",
+                "label": "4",
+                "vat_rate": "5.5",
+                "price": "21715.0",
+                "tax": "1132.06",
+                "product": {
+                  "id": 11767,
+                  "label": "BMW X3",
+                  "unit_price": "21715.0",
+                  "unit_price_without_tax": "20582.94",
+                  "unit_tax": "1132.06"
+                }
+              },
+              {
+                "id": 5802,
+                "invoice_id": 3188,
+                "product_id": 11768,
+                "quantity": 1,
+                "unit": "day",
+                "label": "5",
+                "vat_rate": "20",
+                "price": "17120.0",
+                "tax": "2853.33",
+                "product": {
+                  "id": 11768,
+                  "label": "Ford Focus",
+                  "unit_price": "17120.0",
+                  "unit_price_without_tax": "14266.67",
+                  "unit_tax": "2853.33"
+                }
+              }
+            ]
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "page_size": 25,
+          "total_pages": 1,
+          "total_entries": 3
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "invoices#update": [
+    {
+      "title": "InvoicesController#update destroying an invoice_line works properly",
+      "verb": "PUT",
+      "path": "/invoices/3197",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": "invoice[invoice_lines_attributes][][id]=5819&invoice[invoice_lines_attributes][][_destroy]=true",
+      "response_data": {
+        "id": 3197,
+        "customer_id": 3887,
+        "finalized": false,
+        "paid": false,
+        "date": "2021-02-03",
+        "deadline": null,
+        "total": "0.0",
+        "tax": "0.0",
+        "customer": {
+          "id": 3887,
+          "first_name": "Joetta",
+          "last_name": "Pfeffer",
+          "address": "7206 Andreas Club",
+          "zip_code": "44781-1028",
+          "city": "Emmanuelfort",
+          "country": "Tonga",
+          "country_code": "TO"
+        },
+        "invoice_lines": [
+
+        ]
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "InvoicesController#update updating an invoice_line works properly",
+      "verb": "PUT",
+      "path": "/invoices/3198",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": "invoice[invoice_lines_attributes][][id]=5820&invoice[invoice_lines_attributes][][quantity]=2",
+      "response_data": {
+        "id": 3198,
+        "customer_id": 3888,
+        "finalized": false,
+        "paid": false,
+        "date": "2021-02-03",
+        "deadline": null,
+        "total": "16705.0",
+        "tax": "870.88",
+        "customer": {
+          "id": 3888,
+          "first_name": "Linsey",
+          "last_name": "Cormier",
+          "address": "8875 Mraz Stream",
+          "zip_code": "36891",
+          "city": "Nitzschechester",
+          "country": "Gambia",
+          "country_code": "GM"
+        },
+        "invoice_lines": [
+          {
+            "id": 5820,
+            "invoice_id": 3198,
+            "product_id": 11786,
+            "quantity": 2,
+            "unit": "day",
+            "label": "Ford Mustang",
+            "vat_rate": "5.5",
+            "price": "16705.0",
+            "tax": "870.88",
+            "product": {
+              "id": 11786,
+              "label": "Ford Mustang",
+              "unit_price": "16705.0",
+              "unit_price_without_tax": "15834.12",
+              "unit_tax": "870.88"
+            }
+          }
+        ]
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "InvoicesController#update adding a new invoice_line works properly",
+      "verb": "PUT",
+      "path": "/invoices/3199",
+      "versions": [
+        "1.0"
+      ],
+      "query": null,
+      "request_data": "invoice[invoice_lines_attributes][][product_id]=11787&invoice[invoice_lines_attributes][][label]=New+line&invoice[invoice_lines_attributes][][quantity]=1&invoice[invoice_lines_attributes][][unit]=piece&invoice[invoice_lines_attributes][][vat_rate]=20&invoice[invoice_lines_attributes][][price]=100",
+      "response_data": {
+        "id": 3199,
+        "customer_id": 3889,
+        "finalized": false,
+        "paid": false,
+        "date": "2021-02-03",
+        "deadline": null,
+        "total": "28790.0",
+        "tax": "4798.34",
+        "customer": {
+          "id": 3889,
+          "first_name": "Jennine",
+          "last_name": "Hansen",
+          "address": "3511 Reggie Vista",
+          "zip_code": "42128-7487",
+          "city": "New Graigland",
+          "country": "Croatia",
+          "country_code": "HR"
+        },
+        "invoice_lines": [
+          {
+            "id": 5821,
+            "invoice_id": 3199,
+            "product_id": 11787,
+            "quantity": 1,
+            "unit": "hour",
+            "label": "Nissan Versa",
+            "vat_rate": "20",
+            "price": "28690.0",
+            "tax": "4781.67",
+            "product": {
+              "id": 11787,
+              "label": "Nissan Versa",
+              "unit_price": "28690.0",
+              "unit_price_without_tax": "23908.33",
+              "unit_tax": "4781.67"
+            }
+          },
+          {
+            "id": 5822,
+            "invoice_id": 3199,
+            "product_id": 11787,
+            "quantity": 1,
+            "unit": "piece",
+            "label": "New line",
+            "vat_rate": "20",
+            "price": "100.0",
+            "tax": "16.67",
+            "product": {
+              "id": 11787,
+              "label": "Nissan Versa",
+              "unit_price": "28690.0",
+              "unit_price_without_tax": "23908.33",
+              "unit_tax": "4781.67"
+            }
+          }
+        ]
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "products#search": [
+    {
+      "title": "ProductsController#search works when searching a brand",
+      "verb": "GET",
+      "path": "/products/search",
+      "versions": [
+        "1.0"
+      ],
+      "query": "query=Renault",
+      "request_data": null,
+      "response_data": {
+        "products": [
+          {
+            "id": 11789,
+            "label": "Renault Clio",
+            "unit_price": "21690.0",
+            "unit_price_without_tax": "20559.24",
+            "unit_tax": "1130.76"
+          },
+          {
+            "id": 11790,
+            "label": "Renault Clio 2",
+            "unit_price": "22655.0",
+            "unit_price_without_tax": "18879.17",
+            "unit_tax": "3775.83"
+          },
+          {
+            "id": 11791,
+            "label": "Renault Scenic",
+            "unit_price": "16980.0",
+            "unit_price_without_tax": "16980.0",
+            "unit_tax": "0.0"
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "page_size": 25,
+          "total_pages": 1,
+          "total_entries": 3
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "ProductsController#search works when searching with a space",
+      "verb": "GET",
+      "path": "/products/search",
+      "versions": [
+        "1.0"
+      ],
+      "query": "query=Renault+Clio",
+      "request_data": null,
+      "response_data": {
+        "products": [
+          {
+            "id": 11795,
+            "label": "Renault Clio",
+            "unit_price": "29620.0",
+            "unit_price_without_tax": "29620.0",
+            "unit_tax": "0.0"
+          },
+          {
+            "id": 11796,
+            "label": "Renault Clio 2",
+            "unit_price": "16015.0",
+            "unit_price_without_tax": "15180.09",
+            "unit_tax": "834.91"
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "page_size": 25,
+          "total_pages": 1,
+          "total_entries": 2
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "ProductsController#search works when searching part of word",
+      "verb": "GET",
+      "path": "/products/search",
+      "versions": [
+        "1.0"
+      ],
+      "query": "query=07",
+      "request_data": null,
+      "response_data": {
+        "products": [
+          {
+            "id": 11804,
+            "label": "Peugeot 207",
+            "unit_price": "12470.0",
+            "unit_price_without_tax": "11819.91",
+            "unit_tax": "650.09"
+          },
+          {
+            "id": 11805,
+            "label": "Peugeot 307",
+            "unit_price": "23875.0",
+            "unit_price_without_tax": "23875.0",
+            "unit_tax": "0.0"
+          },
+          {
+            "id": 11806,
+            "label": "Peugeot 407",
+            "unit_price": "18980.0",
+            "unit_price_without_tax": "17254.55",
+            "unit_tax": "1725.45"
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "page_size": 25,
+          "total_pages": 1,
+          "total_entries": 3
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "ProductsController pagination paginates by 25 without params",
+      "verb": "GET",
+      "path": "/products/search",
+      "versions": [
+        "1.0"
+      ],
+      "query": "query=Renault",
+      "request_data": null,
+      "response_data": {
+        "products": [
+          {
+            "id": 11807,
+            "label": "Renault",
+            "unit_price": "12495.0",
+            "unit_price_without_tax": "12495.0",
+            "unit_tax": "0.0"
+          },
+          {
+            "id": 11808,
+            "label": "Renault",
+            "unit_price": "16255.0",
+            "unit_price_without_tax": "14777.27",
+            "unit_tax": "1477.73"
+          },
+          {
+            "id": 11809,
+            "label": "Renault",
+            "unit_price": "14880.0",
+            "unit_price_without_tax": "12400.0",
+            "unit_tax": "2480.0"
+          },
+          {
+            "id": 11810,
+            "label": "Renault",
+            "unit_price": "22900.0",
+            "unit_price_without_tax": "21706.16",
+            "unit_tax": "1193.84"
+          },
+          {
+            "id": 11811,
+            "label": "Renault",
+            "unit_price": "8025.0",
+            "unit_price_without_tax": "6687.5",
+            "unit_tax": "1337.5"
+          },
+          {
+            "id": 11812,
+            "label": "Renault",
+            "unit_price": "14065.0",
+            "unit_price_without_tax": "14065.0",
+            "unit_tax": "0.0"
+          },
+          {
+            "id": 11813,
+            "label": "Renault",
+            "unit_price": "11195.0",
+            "unit_price_without_tax": "9329.17",
+            "unit_tax": "1865.83"
+          },
+          {
+            "id": 11814,
+            "label": "Renault",
+            "unit_price": "17115.0",
+            "unit_price_without_tax": "17115.0",
+            "unit_tax": "0.0"
+          },
+          {
+            "id": 11815,
+            "label": "Renault",
+            "unit_price": "17000.0",
+            "unit_price_without_tax": "17000.0",
+            "unit_tax": "0.0"
+          },
+          {
+            "id": 11816,
+            "label": "Renault",
+            "unit_price": "16960.0",
+            "unit_price_without_tax": "15418.18",
+            "unit_tax": "1541.82"
+          },
+          {
+            "id": 11817,
+            "label": "Renault",
+            "unit_price": "24740.0",
+            "unit_price_without_tax": "22490.91",
+            "unit_tax": "2249.09"
+          },
+          {
+            "id": 11818,
+            "label": "Renault",
+            "unit_price": "27495.0",
+            "unit_price_without_tax": "26061.61",
+            "unit_tax": "1433.39"
+          },
+          {
+            "id": 11819,
+            "label": "Renault",
+            "unit_price": "29695.0",
+            "unit_price_without_tax": "24745.83",
+            "unit_tax": "4949.17"
+          },
+          {
+            "id": 11820,
+            "label": "Renault",
+            "unit_price": "17445.0",
+            "unit_price_without_tax": "16535.55",
+            "unit_tax": "909.45"
+          },
+          {
+            "id": 11821,
+            "label": "Renault",
+            "unit_price": "9640.0",
+            "unit_price_without_tax": "9640.0",
+            "unit_tax": "0.0"
+          },
+          {
+            "id": 11822,
+            "label": "Renault",
+            "unit_price": "16590.0",
+            "unit_price_without_tax": "15081.82",
+            "unit_tax": "1508.18"
+          },
+          {
+            "id": 11823,
+            "label": "Renault",
+            "unit_price": "20625.0",
+            "unit_price_without_tax": "20625.0",
+            "unit_tax": "0.0"
+          },
+          {
+            "id": 11824,
+            "label": "Renault",
+            "unit_price": "26750.0",
+            "unit_price_without_tax": "22291.67",
+            "unit_tax": "4458.33"
+          },
+          {
+            "id": 11825,
+            "label": "Renault",
+            "unit_price": "18035.0",
+            "unit_price_without_tax": "15029.17",
+            "unit_tax": "3005.83"
+          },
+          {
+            "id": 11826,
+            "label": "Renault",
+            "unit_price": "29975.0",
+            "unit_price_without_tax": "28412.32",
+            "unit_tax": "1562.68"
+          },
+          {
+            "id": 11827,
+            "label": "Renault",
+            "unit_price": "15775.0",
+            "unit_price_without_tax": "14952.61",
+            "unit_tax": "822.39"
+          },
+          {
+            "id": 11828,
+            "label": "Renault",
+            "unit_price": "29255.0",
+            "unit_price_without_tax": "29255.0",
+            "unit_tax": "0.0"
+          },
+          {
+            "id": 11829,
+            "label": "Renault",
+            "unit_price": "12225.0",
+            "unit_price_without_tax": "11113.64",
+            "unit_tax": "1111.36"
+          },
+          {
+            "id": 11830,
+            "label": "Renault",
+            "unit_price": "12835.0",
+            "unit_price_without_tax": "11668.18",
+            "unit_tax": "1166.82"
+          },
+          {
+            "id": 11831,
+            "label": "Renault",
+            "unit_price": "27625.0",
+            "unit_price_without_tax": "26184.83",
+            "unit_tax": "1440.17"
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "page_size": 25,
+          "total_pages": 2,
+          "total_entries": 30
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "ProductsController pagination respects page param",
+      "verb": "GET",
+      "path": "/products/search",
+      "versions": [
+        "1.0"
+      ],
+      "query": "query=Renault&page=2",
+      "request_data": null,
+      "response_data": {
+        "products": [
+          {
+            "id": 11892,
+            "label": "Renault",
+            "unit_price": "27950.0",
+            "unit_price_without_tax": "25409.09",
+            "unit_tax": "2540.91"
+          },
+          {
+            "id": 11893,
+            "label": "Renault",
+            "unit_price": "8345.0",
+            "unit_price_without_tax": "8345.0",
+            "unit_tax": "0.0"
+          },
+          {
+            "id": 11894,
+            "label": "Renault",
+            "unit_price": "23505.0",
+            "unit_price_without_tax": "23505.0",
+            "unit_tax": "0.0"
+          },
+          {
+            "id": 11895,
+            "label": "Renault",
+            "unit_price": "22050.0",
+            "unit_price_without_tax": "18375.0",
+            "unit_tax": "3675.0"
+          },
+          {
+            "id": 11896,
+            "label": "Renault",
+            "unit_price": "13680.0",
+            "unit_price_without_tax": "12966.82",
+            "unit_tax": "713.18"
+          }
+        ],
+        "pagination": {
+          "page": 2,
+          "page_size": 25,
+          "total_pages": 2,
+          "total_entries": 30
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "title": "ProductsController pagination respects per_page param",
+      "verb": "GET",
+      "path": "/products/search",
+      "versions": [
+        "1.0"
+      ],
+      "query": "query=Renault&per_page=7",
+      "request_data": null,
+      "response_data": {
+        "products": [
+          {
+            "id": 11927,
+            "label": "Renault",
+            "unit_price": "18340.0",
+            "unit_price_without_tax": "18340.0",
+            "unit_tax": "0.0"
+          },
+          {
+            "id": 11928,
+            "label": "Renault",
+            "unit_price": "20350.0",
+            "unit_price_without_tax": "19289.1",
+            "unit_tax": "1060.9"
+          },
+          {
+            "id": 11929,
+            "label": "Renault",
+            "unit_price": "28420.0",
+            "unit_price_without_tax": "28420.0",
+            "unit_tax": "0.0"
+          },
+          {
+            "id": 11930,
+            "label": "Renault",
+            "unit_price": "27830.0",
+            "unit_price_without_tax": "25300.0",
+            "unit_tax": "2530.0"
+          },
+          {
+            "id": 11931,
+            "label": "Renault",
+            "unit_price": "27545.0",
+            "unit_price_without_tax": "26109.0",
+            "unit_tax": "1436.0"
+          },
+          {
+            "id": 11932,
+            "label": "Renault",
+            "unit_price": "11335.0",
+            "unit_price_without_tax": "9445.83",
+            "unit_tax": "1889.17"
+          },
+          {
+            "id": 11933,
+            "label": "Renault",
+            "unit_price": "24960.0",
+            "unit_price_without_tax": "23658.77",
+            "unit_tax": "1301.23"
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "page_size": 7,
+          "total_pages": 5,
+          "total_entries": 30
+        }
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ]
+}

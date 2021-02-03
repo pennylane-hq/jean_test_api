@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  apipie
+
   root to: 'application#index'
 
   resources :customers, only: %i[show] do

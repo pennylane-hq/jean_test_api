@@ -26,6 +26,17 @@ describe InvoicesController do
 
         expect(response.parsed[:invoices].map { _1[:id] }).to eq [invoices[2].id]
       end
+
+      it 'works with the customer_id' do
+        get '/invoices', params: { search: [{
+          field: 'customer_id',
+          operator: 'eq',
+          value: invoices[0].customer.id,
+        }].to_json }
+        expect(response.status).to eq 200
+
+        expect(response.parsed[:invoices].map { _1[:id] }).to eq [invoices[0].id]
+      end
     end
 
     describe 'search_any' do
@@ -75,7 +86,7 @@ describe InvoicesController do
     end
   end
 
-  describe 'update' do
+  describe '#update' do
     let(:invoice) { create(:invoice, invoice_lines: [build(:invoice_line)]) }
 
     describe 'destroying an invoice_line' do
