@@ -12,34 +12,34 @@
       "response_data": {
         "customers": [
           {
-            "id": 3810,
+            "id": 4428,
             "first_name": "Jean",
             "last_name": "Dupont",
-            "address": "12937 Schaden Island",
-            "zip_code": "21003-8916",
-            "city": "New Kelsieton",
-            "country": "Lesotho",
-            "country_code": "LS"
+            "address": "30116 Pfeffer Lights",
+            "zip_code": "99787",
+            "city": "Lake Galebury",
+            "country": "Saint Lucia",
+            "country_code": "LC"
           },
           {
-            "id": 3811,
+            "id": 4429,
             "first_name": "Jean",
             "last_name": "Dupond",
-            "address": "330 Swaniawski Meadows",
-            "zip_code": "78417-9361",
-            "city": "Port Lieselotte",
-            "country": "Colombia",
-            "country_code": "CO"
+            "address": "735 Hegmann Spurs",
+            "zip_code": "07368",
+            "city": "South Evelina",
+            "country": "Svalbard and Jan Mayen",
+            "country_code": "SJ"
           },
           {
-            "id": 3812,
+            "id": 4430,
             "first_name": "Jean",
             "last_name": "Bonneau",
-            "address": "20476 Kshlerin Lakes",
-            "zip_code": "42722",
-            "city": "New Tamie",
-            "country": "Gambia",
-            "country_code": "GM"
+            "address": "98625 Collins Valley",
+            "zip_code": "36991-0780",
+            "city": "East Alphonsemouth",
+            "country": "Panama",
+            "country_code": "PA"
           }
         ],
         "pagination": {
@@ -65,34 +65,34 @@
       "response_data": {
         "customers": [
           {
-            "id": 3814,
+            "id": 4432,
             "first_name": "Martin",
             "last_name": "Dupont",
-            "address": "691 VonRueden Run",
-            "zip_code": "23849",
-            "city": "East Neoma",
-            "country": "Syrian Arab Republic",
-            "country_code": "SY"
+            "address": "86204 Ian Extension",
+            "zip_code": "58398",
+            "city": "North Andreston",
+            "country": "Cocos (Keeling) Islands",
+            "country_code": "CC"
           },
           {
-            "id": 3815,
+            "id": 4433,
             "first_name": "Pierre",
             "last_name": "Dupont",
-            "address": "796 Selene Park",
-            "zip_code": "84525",
-            "city": "Murphyfort",
-            "country": "Morocco",
-            "country_code": "MA"
+            "address": "121 Alfonso Wall",
+            "zip_code": "98627",
+            "city": "North Bernetta",
+            "country": "Tuvalu",
+            "country_code": "TV"
           },
           {
-            "id": 3816,
+            "id": 4434,
             "first_name": "Jean",
             "last_name": "Dupont",
-            "address": "136 Dare Mountain",
-            "zip_code": "19800",
-            "city": "North Josephshire",
-            "country": "Belgium",
-            "country_code": "BE"
+            "address": "5735 Fahey Lane",
+            "zip_code": "81902",
+            "city": "South Namtown",
+            "country": "Mozambique",
+            "country_code": "MZ"
           }
         ],
         "pagination": {
@@ -118,44 +118,44 @@
       "response_data": {
         "customers": [
           {
-            "id": 3820,
+            "id": 4438,
             "first_name": "Martin",
             "last_name": "Dupont",
-            "address": "3876 Dewitt Isle",
-            "zip_code": "35621-0004",
-            "city": "New Gladys",
-            "country": "Malta",
-            "country_code": "MT"
+            "address": "3261 Swift Circles",
+            "zip_code": "35040",
+            "city": "South Adrien",
+            "country": "Zimbabwe",
+            "country_code": "ZW"
           },
           {
-            "id": 3821,
+            "id": 4439,
             "first_name": "Pierre",
             "last_name": "Dupont",
-            "address": "27822 Beahan Camp",
-            "zip_code": "34423",
-            "city": "New Jacinto",
-            "country": "South Georgia and the South Sandwich Islands",
-            "country_code": "GS"
+            "address": "26909 Kerluke Route",
+            "zip_code": "11803-5437",
+            "city": "North Reyesborough",
+            "country": "Kiribati",
+            "country_code": "KI"
           },
           {
-            "id": 3822,
+            "id": 4440,
             "first_name": "Jean",
             "last_name": "Dupont",
-            "address": "28751 Danette Pike",
-            "zip_code": "53142-4475",
-            "city": "South Francisstad",
-            "country": "Canada",
-            "country_code": "CA"
+            "address": "6042 Jast Spur",
+            "zip_code": "63509-4116",
+            "city": "Mayerton",
+            "country": "Singapore",
+            "country_code": "SG"
           },
           {
-            "id": 3823,
+            "id": 4441,
             "first_name": "Jean",
             "last_name": "Dupond",
-            "address": "891 Bradtke Fields",
-            "zip_code": "43578-2660",
-            "city": "Antoneside",
-            "country": "Slovakia",
-            "country_code": "SK"
+            "address": "2741 Marcos Lane",
+            "zip_code": "01559-0359",
+            "city": "East Janieceton",
+            "country": "San Marino",
+            "country_code": "SM"
           }
         ],
         "pagination": {
@@ -181,24 +181,24 @@
       "response_data": {
         "customers": [
           {
-            "id": 3826,
+            "id": 4444,
             "first_name": "Martin",
             "last_name": "Dupont",
-            "address": "671 Laurence Glen",
-            "zip_code": "71683",
-            "city": "Ellynside",
-            "country": "Malaysia",
-            "country_code": "MY"
+            "address": "3400 Stanton Curve",
+            "zip_code": "56466-5827",
+            "city": "East Johnathonburgh",
+            "country": "United States Minor Outlying Islands",
+            "country_code": "UM"
           },
           {
-            "id": 3831,
+            "id": 4449,
             "first_name": "Jacques",
             "last_name": "Martin",
-            "address": "301 Schuppe Harbor",
-            "zip_code": "65166-7844",
-            "city": "Lake Sandyton",
-            "country": "Virgin Islands (British)",
-            "country_code": "VG"
+            "address": "8078 Sporer Square",
+            "zip_code": "83289-0019",
+            "city": "Jefferyfurt",
+            "country": "Gambia",
+            "country_code": "GM"
           }
         ],
         "pagination": {
@@ -222,10 +222,14 @@
         "1.0"
       ],
       "query": null,
-      "request_data": "invoice[customer_id]=3890",
+      "request_data": {
+        "invoice": {
+          "customer_id": 4508
+        }
+      },
       "response_data": {
-        "id": 3200,
-        "customer_id": 3890,
+        "id": 3680,
+        "customer_id": 4508,
         "finalized": false,
         "paid": false,
         "date": null,
@@ -233,14 +237,14 @@
         "total": "0.0",
         "tax": "0.0",
         "customer": {
-          "id": 3890,
-          "first_name": "Julianne",
-          "last_name": "Little",
-          "address": "891 Vernon Keys",
-          "zip_code": "89423",
-          "city": "South Chadwick",
-          "country": "Bhutan",
-          "country_code": "BT"
+          "id": 4508,
+          "first_name": "Hugo",
+          "last_name": "Mosciski",
+          "address": "35036 White Station",
+          "zip_code": "07347-4253",
+          "city": "Lemkeside",
+          "country": "Cook Islands",
+          "country_code": "CK"
         },
         "invoice_lines": [
 
@@ -258,10 +262,29 @@
         "1.0"
       ],
       "query": null,
-      "request_data": "invoice[customer_id]=3891&invoice[finalized]=false&invoice[paid]=false&invoice[date]=2021-02-03&invoice[deadline]=2021-03-05&invoice[invoice_lines_attributes][][product_id]=11788&invoice[invoice_lines_attributes][][quantity]=1&invoice[invoice_lines_attributes][][unit]=piece&invoice[invoice_lines_attributes][][label]=Produit&invoice[invoice_lines_attributes][][vat_rate]=20&invoice[invoice_lines_attributes][][price]=120&invoice[invoice_lines_attributes][][tax]=20",
+      "request_data": {
+        "invoice": {
+          "customer_id": 4509,
+          "finalized": false,
+          "paid": false,
+          "date": "2021-02-03",
+          "deadline": "2021-03-05",
+          "invoice_lines_attributes": [
+            {
+              "product_id": 13840,
+              "quantity": 1,
+              "unit": "piece",
+              "label": "Produit",
+              "vat_rate": "20",
+              "price": 120,
+              "tax": 20
+            }
+          ]
+        }
+      },
       "response_data": {
-        "id": 3201,
-        "customer_id": 3891,
+        "id": 3681,
+        "customer_id": 4509,
         "finalized": false,
         "paid": false,
         "date": "2021-02-03",
@@ -269,20 +292,20 @@
         "total": "120.0",
         "tax": "20.0",
         "customer": {
-          "id": 3891,
-          "first_name": "Nathanael",
-          "last_name": "Waelchi",
-          "address": "2339 Raynor Groves",
-          "zip_code": "58648",
-          "city": "North Tillie",
-          "country": "British Indian Ocean Territory",
-          "country_code": "IO"
+          "id": 4509,
+          "first_name": "Rachael",
+          "last_name": "Gerhold",
+          "address": "8690 Hugo Throughway",
+          "zip_code": "84304",
+          "city": "Fredricmouth",
+          "country": "Congo",
+          "country_code": "CG"
         },
         "invoice_lines": [
           {
-            "id": 5823,
-            "invoice_id": 3201,
-            "product_id": 11788,
+            "id": 6680,
+            "invoice_id": 3681,
+            "product_id": 13840,
             "quantity": 1,
             "unit": "piece",
             "label": "Produit",
@@ -290,10 +313,10 @@
             "price": "120.0",
             "tax": "20.0",
             "product": {
-              "id": 11788,
-              "label": "Chevy Malibu",
-              "unit_price": "21585.0",
-              "unit_price_without_tax": "21585.0",
+              "id": 13840,
+              "label": "Honda CR-V",
+              "unit_price": "29925.0",
+              "unit_price_without_tax": "29925.0",
               "unit_tax": "0.0"
             }
           }
@@ -308,7 +331,7 @@
     {
       "title": "InvoicesController destroying an invoice works properly",
       "verb": "DELETE",
-      "path": "/invoices/3202",
+      "path": "/invoices/3682",
       "versions": [
         "1.0"
       ],
@@ -322,7 +345,7 @@
     {
       "title": "InvoicesController destroying an invoice shows error when applicable",
       "verb": "DELETE",
-      "path": "/invoices/3203",
+      "path": "/invoices/3683",
       "versions": [
         "1.0"
       ],
@@ -349,59 +372,59 @@
       "response_data": {
         "invoices": [
           {
-            "id": 3143,
-            "customer_id": 3834,
+            "id": 3623,
+            "customer_id": 4452,
             "finalized": false,
             "paid": false,
             "date": "2021-02-03",
             "deadline": null,
-            "total": "23065.0",
-            "tax": "832.73",
+            "total": "33735.0",
+            "tax": "1758.7",
             "customer": {
-              "id": 3834,
+              "id": 4452,
               "first_name": "2",
-              "last_name": "Baumbach",
-              "address": "45888 Son Glen",
-              "zip_code": "97058",
-              "city": "East Jeffreybury",
-              "country": "Algeria",
-              "country_code": "DZ"
+              "last_name": "O'Kon",
+              "address": "6769 Ross Lane",
+              "zip_code": "53351",
+              "city": "East Valentine",
+              "country": "Spain",
+              "country_code": "ES"
             },
             "invoice_lines": [
               {
-                "id": 5713,
-                "invoice_id": 3143,
-                "product_id": 11679,
+                "id": 6570,
+                "invoice_id": 3623,
+                "product_id": 13731,
                 "quantity": 1,
                 "unit": "day",
                 "label": "4",
-                "vat_rate": "10",
-                "price": "9160.0",
-                "tax": "832.73",
+                "vat_rate": "5.5",
+                "price": "8035.0",
+                "tax": "418.89",
                 "product": {
-                  "id": 11679,
-                  "label": "Toyota Prius",
-                  "unit_price": "9160.0",
-                  "unit_price_without_tax": "8327.27",
-                  "unit_tax": "832.73"
+                  "id": 13731,
+                  "label": "Buick Enclave",
+                  "unit_price": "8035.0",
+                  "unit_price_without_tax": "7616.11",
+                  "unit_tax": "418.89"
                 }
               },
               {
-                "id": 5714,
-                "invoice_id": 3143,
-                "product_id": 11680,
+                "id": 6571,
+                "invoice_id": 3623,
+                "product_id": 13732,
                 "quantity": 1,
-                "unit": "hour",
+                "unit": "piece",
                 "label": "5",
-                "vat_rate": "0",
-                "price": "13905.0",
-                "tax": "0.0",
+                "vat_rate": "5.5",
+                "price": "25700.0",
+                "tax": "1339.81",
                 "product": {
-                  "id": 11680,
-                  "label": "Audi A4",
-                  "unit_price": "13905.0",
-                  "unit_price_without_tax": "13905.0",
-                  "unit_tax": "0.0"
+                  "id": 13732,
+                  "label": "Dodge Ram",
+                  "unit_price": "25700.0",
+                  "unit_price_without_tax": "24360.19",
+                  "unit_tax": "1339.81"
                 }
               }
             ]
@@ -425,64 +448,64 @@
       "versions": [
         "1.0"
       ],
-      "query": "search=%5B%7B%22field%22%3A%22customer_id%22%2C%22operator%22%3A%22eq%22%2C%22value%22%3A3843%7D%5D",
+      "query": "search=%5B%7B%22field%22%3A%22customer_id%22%2C%22operator%22%3A%22eq%22%2C%22value%22%3A4461%7D%5D",
       "request_data": null,
       "response_data": {
         "invoices": [
           {
-            "id": 3152,
-            "customer_id": 3843,
+            "id": 3632,
+            "customer_id": 4461,
             "finalized": false,
             "paid": false,
             "date": "2021-02-03",
             "deadline": null,
-            "total": "47850.0",
-            "tax": "3064.17",
+            "total": "21740.0",
+            "tax": "1976.36",
             "customer": {
-              "id": 3843,
+              "id": 4461,
               "first_name": "0",
-              "last_name": "Nader",
-              "address": "7917 Wyman Burg",
-              "zip_code": "01061-1634",
-              "city": "Kraighaven",
-              "country": "Gambia",
-              "country_code": "GM"
+              "last_name": "Jenkins",
+              "address": "86136 Dania Land",
+              "zip_code": "85967-6871",
+              "city": "New Jovan",
+              "country": "Vanuatu",
+              "country_code": "VU"
             },
             "invoice_lines": [
               {
-                "id": 5731,
-                "invoice_id": 3152,
-                "product_id": 11697,
+                "id": 6588,
+                "invoice_id": 3632,
+                "product_id": 13749,
                 "quantity": 1,
-                "unit": "piece",
+                "unit": "hour",
                 "label": "0",
-                "vat_rate": "0",
-                "price": "29465.0",
-                "tax": "0.0",
+                "vat_rate": "10",
+                "price": "9550.0",
+                "tax": "868.18",
                 "product": {
-                  "id": 11697,
+                  "id": 13749,
                   "label": "Ford Mustang",
-                  "unit_price": "29465.0",
-                  "unit_price_without_tax": "29465.0",
-                  "unit_tax": "0.0"
+                  "unit_price": "9550.0",
+                  "unit_price_without_tax": "8681.82",
+                  "unit_tax": "868.18"
                 }
               },
               {
-                "id": 5732,
-                "invoice_id": 3152,
-                "product_id": 11698,
+                "id": 6589,
+                "invoice_id": 3632,
+                "product_id": 13750,
                 "quantity": 1,
-                "unit": "hour",
+                "unit": "piece",
                 "label": "1",
-                "vat_rate": "20",
-                "price": "18385.0",
-                "tax": "3064.17",
+                "vat_rate": "10",
+                "price": "12190.0",
+                "tax": "1108.18",
                 "product": {
-                  "id": 11698,
-                  "label": "Chevy Camero",
-                  "unit_price": "18385.0",
-                  "unit_price_without_tax": "15320.83",
-                  "unit_tax": "3064.17"
+                  "id": 13750,
+                  "label": "Dodge Ram",
+                  "unit_price": "12190.0",
+                  "unit_price_without_tax": "11081.82",
+                  "unit_tax": "1108.18"
                 }
               }
             ]
@@ -511,233 +534,233 @@
       "response_data": {
         "invoices": [
           {
-            "id": 3164,
-            "customer_id": 3855,
+            "id": 3644,
+            "customer_id": 4473,
             "finalized": false,
             "paid": false,
             "date": "2021-02-03",
             "deadline": null,
-            "total": "25675.0",
-            "tax": "1375.0",
+            "total": "41860.0",
+            "tax": "5659.24",
             "customer": {
-              "id": 3855,
+              "id": 4473,
               "first_name": "1",
-              "last_name": "Kulas",
-              "address": "573 Schimmel Lane",
-              "zip_code": "22518-7395",
-              "city": "Lake Jeneva",
-              "country": "Philippines",
-              "country_code": "PH"
+              "last_name": "Dickinson",
+              "address": "67851 Jan Key",
+              "zip_code": "56853-1494",
+              "city": "North Leland",
+              "country": "Croatia",
+              "country_code": "HR"
             },
             "invoice_lines": [
               {
-                "id": 5755,
-                "invoice_id": 3164,
-                "product_id": 11721,
+                "id": 6612,
+                "invoice_id": 3644,
+                "product_id": 13773,
                 "quantity": 1,
                 "unit": "day",
                 "label": "2",
-                "vat_rate": "0",
-                "price": "17425.0",
-                "tax": "0.0",
+                "vat_rate": "20",
+                "price": "24470.0",
+                "tax": "4078.33",
                 "product": {
-                  "id": 11721,
-                  "label": "Chevy Silverado",
-                  "unit_price": "17425.0",
-                  "unit_price_without_tax": "17425.0",
-                  "unit_tax": "0.0"
+                  "id": 13773,
+                  "label": "Ford Fiesta",
+                  "unit_price": "24470.0",
+                  "unit_price_without_tax": "20391.67",
+                  "unit_tax": "4078.33"
                 }
               },
               {
-                "id": 5756,
-                "invoice_id": 3164,
-                "product_id": 11722,
+                "id": 6613,
+                "invoice_id": 3644,
+                "product_id": 13774,
                 "quantity": 1,
-                "unit": "hour",
+                "unit": "piece",
                 "label": "3",
-                "vat_rate": "20",
-                "price": "8250.0",
-                "tax": "1375.0",
+                "vat_rate": "10",
+                "price": "17390.0",
+                "tax": "1580.91",
                 "product": {
-                  "id": 11722,
-                  "label": "Nissan Pathfiner",
-                  "unit_price": "8250.0",
-                  "unit_price_without_tax": "6875.0",
-                  "unit_tax": "1375.0"
+                  "id": 13774,
+                  "label": "Chevy Malibu",
+                  "unit_price": "17390.0",
+                  "unit_price_without_tax": "15809.09",
+                  "unit_tax": "1580.91"
                 }
               }
             ]
           },
           {
-            "id": 3165,
-            "customer_id": 3856,
+            "id": 3645,
+            "customer_id": 4474,
             "finalized": false,
             "paid": false,
             "date": "2021-02-03",
             "deadline": null,
-            "total": "34175.0",
-            "tax": "4938.64",
+            "total": "47005.0",
+            "tax": "2946.67",
             "customer": {
-              "id": 3856,
+              "id": 4474,
               "first_name": "2",
-              "last_name": "Hyatt",
-              "address": "7365 Florentina Overpass",
-              "zip_code": "76675",
-              "city": "New Ismaelshire",
-              "country": "Syrian Arab Republic",
-              "country_code": "SY"
+              "last_name": "D'Amore",
+              "address": "861 Cronin Inlet",
+              "zip_code": "36616",
+              "city": "Haucktown",
+              "country": "United Kingdom of Great Britain and Northern Ireland",
+              "country_code": "GB"
             },
             "invoice_lines": [
               {
-                "id": 5757,
-                "invoice_id": 3165,
-                "product_id": 11723,
+                "id": 6614,
+                "invoice_id": 3645,
+                "product_id": 13775,
                 "quantity": 1,
-                "unit": "hour",
+                "unit": "piece",
                 "label": "4",
-                "vat_rate": "20",
-                "price": "24180.0",
-                "tax": "4030.0",
+                "vat_rate": "0",
+                "price": "29325.0",
+                "tax": "0.0",
                 "product": {
-                  "id": 11723,
+                  "id": 13775,
                   "label": "Honda Civic",
-                  "unit_price": "24180.0",
-                  "unit_price_without_tax": "20150.0",
-                  "unit_tax": "4030.0"
+                  "unit_price": "29325.0",
+                  "unit_price_without_tax": "29325.0",
+                  "unit_tax": "0.0"
                 }
               },
               {
-                "id": 5758,
-                "invoice_id": 3165,
-                "product_id": 11724,
+                "id": 6615,
+                "invoice_id": 3645,
+                "product_id": 13776,
                 "quantity": 1,
                 "unit": "day",
                 "label": "5",
-                "vat_rate": "10",
-                "price": "9995.0",
-                "tax": "908.64",
+                "vat_rate": "20",
+                "price": "17680.0",
+                "tax": "2946.67",
                 "product": {
-                  "id": 11724,
-                  "label": "Nissan Rogue",
-                  "unit_price": "9995.0",
-                  "unit_price_without_tax": "9086.36",
-                  "unit_tax": "908.64"
+                  "id": 13776,
+                  "label": "BMW 328i",
+                  "unit_price": "17680.0",
+                  "unit_price_without_tax": "14733.33",
+                  "unit_tax": "2946.67"
                 }
               }
             ]
           },
           {
-            "id": 3169,
-            "customer_id": 3860,
+            "id": 3649,
+            "customer_id": 4478,
             "finalized": false,
             "paid": false,
             "date": "2021-02-03",
             "deadline": null,
-            "total": "29095.0",
-            "tax": "2219.17",
+            "total": "31895.0",
+            "tax": "1662.78",
             "customer": {
-              "id": 3860,
+              "id": 4478,
               "first_name": "6",
-              "last_name": "Stark",
-              "address": "30095 Devora Heights",
-              "zip_code": "64598",
-              "city": "Lake Ileneshire",
-              "country": "Papua New Guinea",
-              "country_code": "PG"
+              "last_name": "O'Kon",
+              "address": "49423 Lura Junctions",
+              "zip_code": "72432",
+              "city": "Hicklemouth",
+              "country": "Antarctica",
+              "country_code": "AQ"
             },
             "invoice_lines": [
               {
-                "id": 5765,
-                "invoice_id": 3169,
-                "product_id": 11731,
+                "id": 6622,
+                "invoice_id": 3649,
+                "product_id": 13783,
                 "quantity": 1,
-                "unit": "day",
+                "unit": "piece",
                 "label": "12",
-                "vat_rate": "20",
-                "price": "13315.0",
-                "tax": "2219.17",
+                "vat_rate": "5.5",
+                "price": "13540.0",
+                "tax": "705.88",
                 "product": {
-                  "id": 11731,
-                  "label": "Ford Fiesta",
-                  "unit_price": "13315.0",
-                  "unit_price_without_tax": "11095.83",
-                  "unit_tax": "2219.17"
+                  "id": 13783,
+                  "label": "Audi S5",
+                  "unit_price": "13540.0",
+                  "unit_price_without_tax": "12834.12",
+                  "unit_tax": "705.88"
                 }
               },
               {
-                "id": 5766,
-                "invoice_id": 3169,
-                "product_id": 11732,
-                "quantity": 1,
-                "unit": "day",
-                "label": "13",
-                "vat_rate": "0",
-                "price": "15780.0",
-                "tax": "0.0",
-                "product": {
-                  "id": 11732,
-                  "label": "BMW 328i",
-                  "unit_price": "15780.0",
-                  "unit_price_without_tax": "15780.0",
-                  "unit_tax": "0.0"
-                }
-              }
-            ]
-          },
-          {
-            "id": 3173,
-            "customer_id": 3864,
-            "finalized": false,
-            "paid": false,
-            "date": "2021-02-03",
-            "deadline": null,
-            "total": "41095.0",
-            "tax": "3735.91",
-            "customer": {
-              "id": 3864,
-              "first_name": "10",
-              "last_name": "Corwin",
-              "address": "64179 Dorian Avenue",
-              "zip_code": "09599-1469",
-              "city": "Jackport",
-              "country": "Iraq",
-              "country_code": "IQ"
-            },
-            "invoice_lines": [
-              {
-                "id": 5773,
-                "invoice_id": 3173,
-                "product_id": 11739,
+                "id": 6623,
+                "invoice_id": 3649,
+                "product_id": 13784,
                 "quantity": 1,
                 "unit": "hour",
-                "label": "20",
-                "vat_rate": "10",
-                "price": "29390.0",
-                "tax": "2671.82",
+                "label": "13",
+                "vat_rate": "5.5",
+                "price": "18355.0",
+                "tax": "956.9",
                 "product": {
-                  "id": 11739,
-                  "label": "Ford Mustang",
-                  "unit_price": "29390.0",
-                  "unit_price_without_tax": "26718.18",
-                  "unit_tax": "2671.82"
+                  "id": 13784,
+                  "label": "Honda CR-V",
+                  "unit_price": "18355.0",
+                  "unit_price_without_tax": "17398.1",
+                  "unit_tax": "956.9"
+                }
+              }
+            ]
+          },
+          {
+            "id": 3653,
+            "customer_id": 4482,
+            "finalized": false,
+            "paid": false,
+            "date": "2021-02-03",
+            "deadline": null,
+            "total": "56085.0",
+            "tax": "1400.81",
+            "customer": {
+              "id": 4482,
+              "first_name": "10",
+              "last_name": "Kris",
+              "address": "57340 Rocco Mountain",
+              "zip_code": "68935",
+              "city": "South Numbersmouth",
+              "country": "Israel",
+              "country_code": "IL"
+            },
+            "invoice_lines": [
+              {
+                "id": 6630,
+                "invoice_id": 3653,
+                "product_id": 13791,
+                "quantity": 1,
+                "unit": "day",
+                "label": "20",
+                "vat_rate": "0",
+                "price": "29215.0",
+                "tax": "0.0",
+                "product": {
+                  "id": 13791,
+                  "label": "Audi A4",
+                  "unit_price": "29215.0",
+                  "unit_price_without_tax": "29215.0",
+                  "unit_tax": "0.0"
                 }
               },
               {
-                "id": 5774,
-                "invoice_id": 3173,
-                "product_id": 11740,
+                "id": 6631,
+                "invoice_id": 3653,
+                "product_id": 13792,
                 "quantity": 1,
-                "unit": "day",
+                "unit": "piece",
                 "label": "21",
-                "vat_rate": "10",
-                "price": "11705.0",
-                "tax": "1064.09",
+                "vat_rate": "5.5",
+                "price": "26870.0",
+                "tax": "1400.81",
                 "product": {
-                  "id": 11740,
-                  "label": "Dodge Durango",
-                  "unit_price": "11705.0",
-                  "unit_price_without_tax": "10640.91",
-                  "unit_tax": "1064.09"
+                  "id": 13792,
+                  "label": "Lincoln MKZ",
+                  "unit_price": "26870.0",
+                  "unit_price_without_tax": "25469.19",
+                  "unit_tax": "1400.81"
                 }
               }
             ]
@@ -761,71 +784,71 @@
       "versions": [
         "1.0"
       ],
-      "query": "search=%5B%7B%22field%22%3A%22customer_id%22%2C%22operator%22%3A%22eq%22%2C%22value%22%3A3865%7D%5D",
+      "query": "search=%5B%7B%22field%22%3A%22customer_id%22%2C%22operator%22%3A%22eq%22%2C%22value%22%3A4483%7D%5D",
       "request_data": null,
       "response_data": {
         "invoices": [
           {
-            "id": 3174,
-            "customer_id": 3865,
+            "id": 3654,
+            "customer_id": 4483,
             "finalized": false,
             "paid": false,
             "date": "2021-02-03",
             "deadline": null,
-            "total": "46625.0",
-            "tax": "2246.82",
+            "total": "25315.0",
+            "tax": "2992.51",
             "customer": {
-              "id": 3865,
+              "id": 4483,
               "first_name": "0",
-              "last_name": "Bosco",
-              "address": "3077 August Mountain",
-              "zip_code": "93190",
-              "city": "Kennaberg",
+              "last_name": "Hilpert",
+              "address": "5158 Huels Grove",
+              "zip_code": "28054",
+              "city": "Port Tijuanahaven",
               "country": "Lesotho",
               "country_code": "LS"
             },
             "invoice_lines": [
               {
-                "id": 5775,
-                "invoice_id": 3174,
-                "product_id": 11741,
+                "id": 6632,
+                "invoice_id": 3654,
+                "product_id": 13793,
                 "quantity": 1,
-                "unit": "piece",
+                "unit": "hour",
                 "label": "0",
-                "vat_rate": "10",
-                "price": "24715.0",
-                "tax": "2246.82",
+                "vat_rate": "20",
+                "price": "14605.0",
+                "tax": "2434.17",
                 "product": {
-                  "id": 11741,
-                  "label": "Ford Focus",
-                  "unit_price": "24715.0",
-                  "unit_price_without_tax": "22468.18",
-                  "unit_tax": "2246.82"
+                  "id": 13793,
+                  "label": "Dodge Charger",
+                  "unit_price": "14605.0",
+                  "unit_price_without_tax": "12170.83",
+                  "unit_tax": "2434.17"
                 }
               },
               {
-                "id": 5776,
-                "invoice_id": 3174,
-                "product_id": 11742,
+                "id": 6633,
+                "invoice_id": 3654,
+                "product_id": 13794,
                 "quantity": 1,
                 "unit": "day",
                 "label": "1",
-                "vat_rate": "0",
-                "price": "21910.0",
-                "tax": "0.0",
+                "vat_rate": "5.5",
+                "price": "10710.0",
+                "tax": "558.34",
                 "product": {
-                  "id": 11742,
-                  "label": "Honda Odyssey",
-                  "unit_price": "21910.0",
-                  "unit_price_without_tax": "21910.0",
-                  "unit_tax": "0.0"
+                  "id": 13794,
+                  "label": "Dodge Ram",
+                  "unit_price": "10710.0",
+                  "unit_price_without_tax": "10151.66",
+                  "unit_tax": "558.34"
                 }
               }
             ]
           },
           {
-            "id": 3185,
-            "customer_id": 3865,
+            "id": 3665,
+            "customer_id": 4483,
             "finalized": false,
             "paid": false,
             "date": "2021-02-03",
@@ -833,12 +856,12 @@
             "total": "0.0",
             "tax": "0.0",
             "customer": {
-              "id": 3865,
+              "id": 4483,
               "first_name": "0",
-              "last_name": "Bosco",
-              "address": "3077 August Mountain",
-              "zip_code": "93190",
-              "city": "Kennaberg",
+              "last_name": "Hilpert",
+              "address": "5158 Huels Grove",
+              "zip_code": "28054",
+              "city": "Port Tijuanahaven",
               "country": "Lesotho",
               "country_code": "LS"
             },
@@ -865,180 +888,180 @@
       "versions": [
         "1.0"
       ],
-      "query": "search=%5B%7B%22field%22%3A%22customer_id%22%2C%22operator%22%3A%22in%22%2C%22value%22%3A%5B3876%2C3877%2C3878%5D%7D%5D",
+      "query": "search=%5B%7B%22field%22%3A%22customer_id%22%2C%22operator%22%3A%22in%22%2C%22value%22%3A%5B4494%2C4495%2C4496%5D%7D%5D",
       "request_data": null,
       "response_data": {
         "invoices": [
           {
-            "id": 3186,
-            "customer_id": 3876,
+            "id": 3666,
+            "customer_id": 4494,
             "finalized": false,
             "paid": false,
             "date": "2021-02-03",
             "deadline": null,
-            "total": "17820.0",
-            "tax": "929.0",
+            "total": "30020.0",
+            "tax": "2300.03",
             "customer": {
-              "id": 3876,
+              "id": 4494,
               "first_name": "0",
-              "last_name": "Marquardt",
-              "address": "79154 Grace Divide",
-              "zip_code": "37929",
-              "city": "Willowview",
-              "country": "Faroe Islands",
-              "country_code": "FO"
+              "last_name": "Dibbert",
+              "address": "5513 Rasheeda Keys",
+              "zip_code": "65244",
+              "city": "New Linshire",
+              "country": "Zimbabwe",
+              "country_code": "ZW"
             },
             "invoice_lines": [
               {
-                "id": 5797,
-                "invoice_id": 3186,
-                "product_id": 11763,
+                "id": 6654,
+                "invoice_id": 3666,
+                "product_id": 13815,
                 "quantity": 1,
                 "unit": "piece",
                 "label": "0",
                 "vat_rate": "5.5",
-                "price": "9650.0",
-                "tax": "503.08",
+                "price": "11065.0",
+                "tax": "576.85",
                 "product": {
-                  "id": 11763,
-                  "label": "Ford F150",
-                  "unit_price": "9650.0",
-                  "unit_price_without_tax": "9146.92",
-                  "unit_tax": "503.08"
+                  "id": 13815,
+                  "label": "BMW X5",
+                  "unit_price": "11065.0",
+                  "unit_price_without_tax": "10488.15",
+                  "unit_tax": "576.85"
                 }
               },
               {
-                "id": 5798,
-                "invoice_id": 3186,
-                "product_id": 11764,
+                "id": 6655,
+                "invoice_id": 3666,
+                "product_id": 13816,
                 "quantity": 1,
                 "unit": "piece",
                 "label": "1",
-                "vat_rate": "5.5",
-                "price": "8170.0",
-                "tax": "425.92",
+                "vat_rate": "10",
+                "price": "18955.0",
+                "tax": "1723.18",
                 "product": {
-                  "id": 11764,
-                  "label": "Dodge Charger",
-                  "unit_price": "8170.0",
-                  "unit_price_without_tax": "7744.08",
-                  "unit_tax": "425.92"
+                  "id": 13816,
+                  "label": "BMW 328i",
+                  "unit_price": "18955.0",
+                  "unit_price_without_tax": "17231.82",
+                  "unit_tax": "1723.18"
                 }
               }
             ]
           },
           {
-            "id": 3187,
-            "customer_id": 3877,
+            "id": 3667,
+            "customer_id": 4495,
             "finalized": false,
             "paid": false,
             "date": "2021-02-03",
             "deadline": null,
-            "total": "19675.0",
-            "tax": "2618.56",
+            "total": "42925.0",
+            "tax": "1770.0",
             "customer": {
-              "id": 3877,
+              "id": 4495,
               "first_name": "1",
-              "last_name": "Brekke",
-              "address": "2574 Rogahn Tunnel",
-              "zip_code": "85929",
-              "city": "North Aminamouth",
-              "country": "Mozambique",
-              "country_code": "MZ"
+              "last_name": "Kihn",
+              "address": "230 Monahan Villages",
+              "zip_code": "11655",
+              "city": "Cristinaland",
+              "country": "Bangladesh",
+              "country_code": "BD"
             },
             "invoice_lines": [
               {
-                "id": 5799,
-                "invoice_id": 3187,
-                "product_id": 11765,
+                "id": 6656,
+                "invoice_id": 3667,
+                "product_id": 13817,
                 "quantity": 1,
-                "unit": "hour",
+                "unit": "piece",
                 "label": "2",
-                "vat_rate": "20",
-                "price": "10955.0",
-                "tax": "1825.83",
+                "vat_rate": "10",
+                "price": "19470.0",
+                "tax": "1770.0",
                 "product": {
-                  "id": 11765,
-                  "label": "Chevy Silverado",
-                  "unit_price": "10955.0",
-                  "unit_price_without_tax": "9129.17",
-                  "unit_tax": "1825.83"
+                  "id": 13817,
+                  "label": "Honda CR-V",
+                  "unit_price": "19470.0",
+                  "unit_price_without_tax": "17700.0",
+                  "unit_tax": "1770.0"
                 }
               },
               {
-                "id": 5800,
-                "invoice_id": 3187,
-                "product_id": 11766,
+                "id": 6657,
+                "invoice_id": 3667,
+                "product_id": 13818,
                 "quantity": 1,
-                "unit": "hour",
+                "unit": "piece",
                 "label": "3",
-                "vat_rate": "10",
-                "price": "8720.0",
-                "tax": "792.73",
+                "vat_rate": "0",
+                "price": "23455.0",
+                "tax": "0.0",
                 "product": {
-                  "id": 11766,
-                  "label": "Audi A7",
-                  "unit_price": "8720.0",
-                  "unit_price_without_tax": "7927.27",
-                  "unit_tax": "792.73"
+                  "id": 13818,
+                  "label": "Dodge Challenger",
+                  "unit_price": "23455.0",
+                  "unit_price_without_tax": "23455.0",
+                  "unit_tax": "0.0"
                 }
               }
             ]
           },
           {
-            "id": 3188,
-            "customer_id": 3878,
+            "id": 3668,
+            "customer_id": 4496,
             "finalized": false,
             "paid": false,
             "date": "2021-02-03",
             "deadline": null,
-            "total": "38835.0",
-            "tax": "3985.39",
+            "total": "41090.0",
+            "tax": "1341.64",
             "customer": {
-              "id": 3878,
+              "id": 4496,
               "first_name": "2",
-              "last_name": "Quitzon",
-              "address": "3845 Na Green",
-              "zip_code": "86784",
-              "city": "North Chester",
-              "country": "Christmas Island",
-              "country_code": "CX"
+              "last_name": "Hessel",
+              "address": "87764 Broderick Stream",
+              "zip_code": "65148-8818",
+              "city": "Saulbury",
+              "country": "Poland",
+              "country_code": "PL"
             },
             "invoice_lines": [
               {
-                "id": 5801,
-                "invoice_id": 3188,
-                "product_id": 11767,
+                "id": 6658,
+                "invoice_id": 3668,
+                "product_id": 13819,
                 "quantity": 1,
-                "unit": "hour",
+                "unit": "day",
                 "label": "4",
                 "vat_rate": "5.5",
-                "price": "21715.0",
-                "tax": "1132.06",
+                "price": "25735.0",
+                "tax": "1341.64",
                 "product": {
-                  "id": 11767,
-                  "label": "BMW X3",
-                  "unit_price": "21715.0",
-                  "unit_price_without_tax": "20582.94",
-                  "unit_tax": "1132.06"
+                  "id": 13819,
+                  "label": "Buick Riveria",
+                  "unit_price": "25735.0",
+                  "unit_price_without_tax": "24393.36",
+                  "unit_tax": "1341.64"
                 }
               },
               {
-                "id": 5802,
-                "invoice_id": 3188,
-                "product_id": 11768,
+                "id": 6659,
+                "invoice_id": 3668,
+                "product_id": 13820,
                 "quantity": 1,
                 "unit": "day",
                 "label": "5",
-                "vat_rate": "20",
-                "price": "17120.0",
-                "tax": "2853.33",
+                "vat_rate": "0",
+                "price": "15355.0",
+                "tax": "0.0",
                 "product": {
-                  "id": 11768,
-                  "label": "Ford Focus",
-                  "unit_price": "17120.0",
-                  "unit_price_without_tax": "14266.67",
-                  "unit_tax": "2853.33"
+                  "id": 13820,
+                  "label": "Chevy Silverado",
+                  "unit_price": "15355.0",
+                  "unit_price_without_tax": "15355.0",
+                  "unit_tax": "0.0"
                 }
               }
             ]
@@ -1060,15 +1083,24 @@
     {
       "title": "InvoicesController#update destroying an invoice_line works properly",
       "verb": "PUT",
-      "path": "/invoices/3197",
+      "path": "/invoices/3677",
       "versions": [
         "1.0"
       ],
       "query": null,
-      "request_data": "invoice[invoice_lines_attributes][][id]=5819&invoice[invoice_lines_attributes][][_destroy]=true",
+      "request_data": {
+        "invoice": {
+          "invoice_lines_attributes": [
+            {
+              "id": 6676,
+              "_destroy": true
+            }
+          ]
+        }
+      },
       "response_data": {
-        "id": 3197,
-        "customer_id": 3887,
+        "id": 3677,
+        "customer_id": 4505,
         "finalized": false,
         "paid": false,
         "date": "2021-02-03",
@@ -1076,14 +1108,14 @@
         "total": "0.0",
         "tax": "0.0",
         "customer": {
-          "id": 3887,
-          "first_name": "Joetta",
-          "last_name": "Pfeffer",
-          "address": "7206 Andreas Club",
-          "zip_code": "44781-1028",
-          "city": "Emmanuelfort",
-          "country": "Tonga",
-          "country_code": "TO"
+          "id": 4505,
+          "first_name": "Loren",
+          "last_name": "VonRueden",
+          "address": "10877 Jakubowski Village",
+          "zip_code": "24099",
+          "city": "Kemmertown",
+          "country": "Moldova (Republic of)",
+          "country_code": "MD"
         },
         "invoice_lines": [
 
@@ -1096,48 +1128,57 @@
     {
       "title": "InvoicesController#update updating an invoice_line works properly",
       "verb": "PUT",
-      "path": "/invoices/3198",
+      "path": "/invoices/3678",
       "versions": [
         "1.0"
       ],
       "query": null,
-      "request_data": "invoice[invoice_lines_attributes][][id]=5820&invoice[invoice_lines_attributes][][quantity]=2",
+      "request_data": {
+        "invoice": {
+          "invoice_lines_attributes": [
+            {
+              "id": 6677,
+              "quantity": 2
+            }
+          ]
+        }
+      },
       "response_data": {
-        "id": 3198,
-        "customer_id": 3888,
+        "id": 3678,
+        "customer_id": 4506,
         "finalized": false,
         "paid": false,
         "date": "2021-02-03",
         "deadline": null,
-        "total": "16705.0",
-        "tax": "870.88",
+        "total": "15235.0",
+        "tax": "794.24",
         "customer": {
-          "id": 3888,
-          "first_name": "Linsey",
-          "last_name": "Cormier",
-          "address": "8875 Mraz Stream",
-          "zip_code": "36891",
-          "city": "Nitzschechester",
-          "country": "Gambia",
-          "country_code": "GM"
+          "id": 4506,
+          "first_name": "Cleo",
+          "last_name": "Langworth",
+          "address": "206 Desmond Center",
+          "zip_code": "68808-7839",
+          "city": "Port Trinidadchester",
+          "country": "Qatar",
+          "country_code": "QA"
         },
         "invoice_lines": [
           {
-            "id": 5820,
-            "invoice_id": 3198,
-            "product_id": 11786,
+            "id": 6677,
+            "invoice_id": 3678,
+            "product_id": 13838,
             "quantity": 2,
-            "unit": "day",
-            "label": "Ford Mustang",
+            "unit": "hour",
+            "label": "BMW M5",
             "vat_rate": "5.5",
-            "price": "16705.0",
-            "tax": "870.88",
+            "price": "15235.0",
+            "tax": "794.24",
             "product": {
-              "id": 11786,
-              "label": "Ford Mustang",
-              "unit_price": "16705.0",
-              "unit_price_without_tax": "15834.12",
-              "unit_tax": "870.88"
+              "id": 13838,
+              "label": "BMW M5",
+              "unit_price": "15235.0",
+              "unit_price_without_tax": "14440.76",
+              "unit_tax": "794.24"
             }
           }
         ]
@@ -1149,54 +1190,67 @@
     {
       "title": "InvoicesController#update adding a new invoice_line works properly",
       "verb": "PUT",
-      "path": "/invoices/3199",
+      "path": "/invoices/3679",
       "versions": [
         "1.0"
       ],
       "query": null,
-      "request_data": "invoice[invoice_lines_attributes][][product_id]=11787&invoice[invoice_lines_attributes][][label]=New+line&invoice[invoice_lines_attributes][][quantity]=1&invoice[invoice_lines_attributes][][unit]=piece&invoice[invoice_lines_attributes][][vat_rate]=20&invoice[invoice_lines_attributes][][price]=100",
+      "request_data": {
+        "invoice": {
+          "invoice_lines_attributes": [
+            {
+              "product_id": 13839,
+              "label": "New line",
+              "quantity": 1,
+              "unit": "piece",
+              "vat_rate": "20",
+              "price": 100
+            }
+          ]
+        }
+      },
       "response_data": {
-        "id": 3199,
-        "customer_id": 3889,
+        "id": 3679,
+        "customer_id": 4507,
         "finalized": false,
         "paid": false,
         "date": "2021-02-03",
         "deadline": null,
-        "total": "28790.0",
-        "tax": "4798.34",
+        "total": "27845.0",
+        "tax": "1463.09",
         "customer": {
-          "id": 3889,
-          "first_name": "Jennine",
-          "last_name": "Hansen",
-          "address": "3511 Reggie Vista",
-          "zip_code": "42128-7487",
-          "city": "New Graigland",
-          "country": "Croatia",
-          "country_code": "HR"
+          "id": 4507,
+          "first_name": "Blanch",
+          "last_name": "Marks",
+          "address": "83318 Jenifer Village",
+          "zip_code": "71655-2277",
+          "city": "Quitzonborough",
+          "country": "Bonaire, Sint Eustatius and Saba",
+          "country_code": "BQ"
         },
         "invoice_lines": [
           {
-            "id": 5821,
-            "invoice_id": 3199,
-            "product_id": 11787,
+            "id": 6678,
+            "invoice_id": 3679,
+            "product_id": 13839,
             "quantity": 1,
-            "unit": "hour",
-            "label": "Nissan Versa",
-            "vat_rate": "20",
-            "price": "28690.0",
-            "tax": "4781.67",
+            "unit": "piece",
+            "label": "Audi A8",
+            "vat_rate": "5.5",
+            "price": "27745.0",
+            "tax": "1446.42",
             "product": {
-              "id": 11787,
-              "label": "Nissan Versa",
-              "unit_price": "28690.0",
-              "unit_price_without_tax": "23908.33",
-              "unit_tax": "4781.67"
+              "id": 13839,
+              "label": "Audi A8",
+              "unit_price": "27745.0",
+              "unit_price_without_tax": "26298.58",
+              "unit_tax": "1446.42"
             }
           },
           {
-            "id": 5822,
-            "invoice_id": 3199,
-            "product_id": 11787,
+            "id": 6679,
+            "invoice_id": 3679,
+            "product_id": 13839,
             "quantity": 1,
             "unit": "piece",
             "label": "New line",
@@ -1204,11 +1258,11 @@
             "price": "100.0",
             "tax": "16.67",
             "product": {
-              "id": 11787,
-              "label": "Nissan Versa",
-              "unit_price": "28690.0",
-              "unit_price_without_tax": "23908.33",
-              "unit_tax": "4781.67"
+              "id": 13839,
+              "label": "Audi A8",
+              "unit_price": "27745.0",
+              "unit_price_without_tax": "26298.58",
+              "unit_tax": "1446.42"
             }
           }
         ]
@@ -1231,25 +1285,25 @@
       "response_data": {
         "products": [
           {
-            "id": 11789,
+            "id": 13841,
             "label": "Renault Clio",
-            "unit_price": "21690.0",
-            "unit_price_without_tax": "20559.24",
-            "unit_tax": "1130.76"
+            "unit_price": "26595.0",
+            "unit_price_without_tax": "25208.53",
+            "unit_tax": "1386.47"
           },
           {
-            "id": 11790,
+            "id": 13842,
             "label": "Renault Clio 2",
-            "unit_price": "22655.0",
-            "unit_price_without_tax": "18879.17",
-            "unit_tax": "3775.83"
+            "unit_price": "25255.0",
+            "unit_price_without_tax": "21045.83",
+            "unit_tax": "4209.17"
           },
           {
-            "id": 11791,
+            "id": 13843,
             "label": "Renault Scenic",
-            "unit_price": "16980.0",
-            "unit_price_without_tax": "16980.0",
-            "unit_tax": "0.0"
+            "unit_price": "23565.0",
+            "unit_price_without_tax": "22336.49",
+            "unit_tax": "1228.51"
           }
         ],
         "pagination": {
@@ -1275,18 +1329,18 @@
       "response_data": {
         "products": [
           {
-            "id": 11795,
+            "id": 13847,
             "label": "Renault Clio",
-            "unit_price": "29620.0",
-            "unit_price_without_tax": "29620.0",
-            "unit_tax": "0.0"
+            "unit_price": "29375.0",
+            "unit_price_without_tax": "26704.55",
+            "unit_tax": "2670.45"
           },
           {
-            "id": 11796,
+            "id": 13848,
             "label": "Renault Clio 2",
-            "unit_price": "16015.0",
-            "unit_price_without_tax": "15180.09",
-            "unit_tax": "834.91"
+            "unit_price": "22300.0",
+            "unit_price_without_tax": "18583.33",
+            "unit_tax": "3716.67"
           }
         ],
         "pagination": {
@@ -1312,25 +1366,25 @@
       "response_data": {
         "products": [
           {
-            "id": 11804,
+            "id": 13856,
             "label": "Peugeot 207",
-            "unit_price": "12470.0",
-            "unit_price_without_tax": "11819.91",
-            "unit_tax": "650.09"
+            "unit_price": "11385.0",
+            "unit_price_without_tax": "9487.5",
+            "unit_tax": "1897.5"
           },
           {
-            "id": 11805,
+            "id": 13857,
             "label": "Peugeot 307",
-            "unit_price": "23875.0",
-            "unit_price_without_tax": "23875.0",
-            "unit_tax": "0.0"
+            "unit_price": "25505.0",
+            "unit_price_without_tax": "23186.36",
+            "unit_tax": "2318.64"
           },
           {
-            "id": 11806,
+            "id": 13858,
             "label": "Peugeot 407",
-            "unit_price": "18980.0",
-            "unit_price_without_tax": "17254.55",
-            "unit_tax": "1725.45"
+            "unit_price": "8550.0",
+            "unit_price_without_tax": "8104.27",
+            "unit_tax": "445.73"
           }
         ],
         "pagination": {
@@ -1356,179 +1410,179 @@
       "response_data": {
         "products": [
           {
-            "id": 11807,
+            "id": 13859,
             "label": "Renault",
-            "unit_price": "12495.0",
-            "unit_price_without_tax": "12495.0",
+            "unit_price": "24040.0",
+            "unit_price_without_tax": "21854.55",
+            "unit_tax": "2185.45"
+          },
+          {
+            "id": 13860,
+            "label": "Renault",
+            "unit_price": "22970.0",
+            "unit_price_without_tax": "21772.51",
+            "unit_tax": "1197.49"
+          },
+          {
+            "id": 13861,
+            "label": "Renault",
+            "unit_price": "22375.0",
+            "unit_price_without_tax": "18645.83",
+            "unit_tax": "3729.17"
+          },
+          {
+            "id": 13862,
+            "label": "Renault",
+            "unit_price": "9360.0",
+            "unit_price_without_tax": "9360.0",
             "unit_tax": "0.0"
           },
           {
-            "id": 11808,
+            "id": 13863,
             "label": "Renault",
-            "unit_price": "16255.0",
-            "unit_price_without_tax": "14777.27",
-            "unit_tax": "1477.73"
+            "unit_price": "22230.0",
+            "unit_price_without_tax": "21071.09",
+            "unit_tax": "1158.91"
           },
           {
-            "id": 11809,
+            "id": 13864,
             "label": "Renault",
-            "unit_price": "14880.0",
-            "unit_price_without_tax": "12400.0",
-            "unit_tax": "2480.0"
+            "unit_price": "23585.0",
+            "unit_price_without_tax": "21440.91",
+            "unit_tax": "2144.09"
           },
           {
-            "id": 11810,
+            "id": 13865,
             "label": "Renault",
-            "unit_price": "22900.0",
-            "unit_price_without_tax": "21706.16",
-            "unit_tax": "1193.84"
+            "unit_price": "12110.0",
+            "unit_price_without_tax": "11009.09",
+            "unit_tax": "1100.91"
           },
           {
-            "id": 11811,
+            "id": 13866,
             "label": "Renault",
-            "unit_price": "8025.0",
-            "unit_price_without_tax": "6687.5",
-            "unit_tax": "1337.5"
+            "unit_price": "19665.0",
+            "unit_price_without_tax": "18639.81",
+            "unit_tax": "1025.19"
           },
           {
-            "id": 11812,
+            "id": 13867,
             "label": "Renault",
-            "unit_price": "14065.0",
-            "unit_price_without_tax": "14065.0",
+            "unit_price": "9605.0",
+            "unit_price_without_tax": "9605.0",
             "unit_tax": "0.0"
           },
           {
-            "id": 11813,
-            "label": "Renault",
-            "unit_price": "11195.0",
-            "unit_price_without_tax": "9329.17",
-            "unit_tax": "1865.83"
-          },
-          {
-            "id": 11814,
-            "label": "Renault",
-            "unit_price": "17115.0",
-            "unit_price_without_tax": "17115.0",
-            "unit_tax": "0.0"
-          },
-          {
-            "id": 11815,
-            "label": "Renault",
-            "unit_price": "17000.0",
-            "unit_price_without_tax": "17000.0",
-            "unit_tax": "0.0"
-          },
-          {
-            "id": 11816,
-            "label": "Renault",
-            "unit_price": "16960.0",
-            "unit_price_without_tax": "15418.18",
-            "unit_tax": "1541.82"
-          },
-          {
-            "id": 11817,
-            "label": "Renault",
-            "unit_price": "24740.0",
-            "unit_price_without_tax": "22490.91",
-            "unit_tax": "2249.09"
-          },
-          {
-            "id": 11818,
-            "label": "Renault",
-            "unit_price": "27495.0",
-            "unit_price_without_tax": "26061.61",
-            "unit_tax": "1433.39"
-          },
-          {
-            "id": 11819,
-            "label": "Renault",
-            "unit_price": "29695.0",
-            "unit_price_without_tax": "24745.83",
-            "unit_tax": "4949.17"
-          },
-          {
-            "id": 11820,
-            "label": "Renault",
-            "unit_price": "17445.0",
-            "unit_price_without_tax": "16535.55",
-            "unit_tax": "909.45"
-          },
-          {
-            "id": 11821,
-            "label": "Renault",
-            "unit_price": "9640.0",
-            "unit_price_without_tax": "9640.0",
-            "unit_tax": "0.0"
-          },
-          {
-            "id": 11822,
-            "label": "Renault",
-            "unit_price": "16590.0",
-            "unit_price_without_tax": "15081.82",
-            "unit_tax": "1508.18"
-          },
-          {
-            "id": 11823,
-            "label": "Renault",
-            "unit_price": "20625.0",
-            "unit_price_without_tax": "20625.0",
-            "unit_tax": "0.0"
-          },
-          {
-            "id": 11824,
+            "id": 13868,
             "label": "Renault",
             "unit_price": "26750.0",
-            "unit_price_without_tax": "22291.67",
-            "unit_tax": "4458.33"
+            "unit_price_without_tax": "25355.45",
+            "unit_tax": "1394.55"
           },
           {
-            "id": 11825,
+            "id": 13869,
             "label": "Renault",
-            "unit_price": "18035.0",
-            "unit_price_without_tax": "15029.17",
-            "unit_tax": "3005.83"
+            "unit_price": "23215.0",
+            "unit_price_without_tax": "21104.55",
+            "unit_tax": "2110.45"
           },
           {
-            "id": 11826,
+            "id": 13870,
             "label": "Renault",
-            "unit_price": "29975.0",
-            "unit_price_without_tax": "28412.32",
-            "unit_tax": "1562.68"
-          },
-          {
-            "id": 11827,
-            "label": "Renault",
-            "unit_price": "15775.0",
-            "unit_price_without_tax": "14952.61",
-            "unit_tax": "822.39"
-          },
-          {
-            "id": 11828,
-            "label": "Renault",
-            "unit_price": "29255.0",
-            "unit_price_without_tax": "29255.0",
+            "unit_price": "28470.0",
+            "unit_price_without_tax": "28470.0",
             "unit_tax": "0.0"
           },
           {
-            "id": 11829,
+            "id": 13871,
             "label": "Renault",
-            "unit_price": "12225.0",
-            "unit_price_without_tax": "11113.64",
-            "unit_tax": "1111.36"
+            "unit_price": "12370.0",
+            "unit_price_without_tax": "11725.12",
+            "unit_tax": "644.88"
           },
           {
-            "id": 11830,
+            "id": 13872,
             "label": "Renault",
-            "unit_price": "12835.0",
-            "unit_price_without_tax": "11668.18",
-            "unit_tax": "1166.82"
+            "unit_price": "12750.0",
+            "unit_price_without_tax": "12085.31",
+            "unit_tax": "664.69"
           },
           {
-            "id": 11831,
+            "id": 13873,
             "label": "Renault",
-            "unit_price": "27625.0",
-            "unit_price_without_tax": "26184.83",
-            "unit_tax": "1440.17"
+            "unit_price": "19995.0",
+            "unit_price_without_tax": "19995.0",
+            "unit_tax": "0.0"
+          },
+          {
+            "id": 13874,
+            "label": "Renault",
+            "unit_price": "29255.0",
+            "unit_price_without_tax": "27729.86",
+            "unit_tax": "1525.14"
+          },
+          {
+            "id": 13875,
+            "label": "Renault",
+            "unit_price": "29655.0",
+            "unit_price_without_tax": "26959.09",
+            "unit_tax": "2695.91"
+          },
+          {
+            "id": 13876,
+            "label": "Renault",
+            "unit_price": "23350.0",
+            "unit_price_without_tax": "22132.7",
+            "unit_tax": "1217.3"
+          },
+          {
+            "id": 13877,
+            "label": "Renault",
+            "unit_price": "27595.0",
+            "unit_price_without_tax": "22995.83",
+            "unit_tax": "4599.17"
+          },
+          {
+            "id": 13878,
+            "label": "Renault",
+            "unit_price": "27325.0",
+            "unit_price_without_tax": "24840.91",
+            "unit_tax": "2484.09"
+          },
+          {
+            "id": 13879,
+            "label": "Renault",
+            "unit_price": "17315.0",
+            "unit_price_without_tax": "16412.32",
+            "unit_tax": "902.68"
+          },
+          {
+            "id": 13880,
+            "label": "Renault",
+            "unit_price": "25040.0",
+            "unit_price_without_tax": "25040.0",
+            "unit_tax": "0.0"
+          },
+          {
+            "id": 13881,
+            "label": "Renault",
+            "unit_price": "14505.0",
+            "unit_price_without_tax": "13186.36",
+            "unit_tax": "1318.64"
+          },
+          {
+            "id": 13882,
+            "label": "Renault",
+            "unit_price": "24925.0",
+            "unit_price_without_tax": "23625.59",
+            "unit_tax": "1299.41"
+          },
+          {
+            "id": 13883,
+            "label": "Renault",
+            "unit_price": "18975.0",
+            "unit_price_without_tax": "17250.0",
+            "unit_tax": "1725.0"
           }
         ],
         "pagination": {
@@ -1554,39 +1608,39 @@
       "response_data": {
         "products": [
           {
-            "id": 11892,
+            "id": 13944,
             "label": "Renault",
-            "unit_price": "27950.0",
-            "unit_price_without_tax": "25409.09",
-            "unit_tax": "2540.91"
+            "unit_price": "18575.0",
+            "unit_price_without_tax": "16886.36",
+            "unit_tax": "1688.64"
           },
           {
-            "id": 11893,
+            "id": 13945,
             "label": "Renault",
-            "unit_price": "8345.0",
-            "unit_price_without_tax": "8345.0",
+            "unit_price": "21010.0",
+            "unit_price_without_tax": "21010.0",
             "unit_tax": "0.0"
           },
           {
-            "id": 11894,
+            "id": 13946,
             "label": "Renault",
-            "unit_price": "23505.0",
-            "unit_price_without_tax": "23505.0",
+            "unit_price": "13650.0",
+            "unit_price_without_tax": "12938.39",
+            "unit_tax": "711.61"
+          },
+          {
+            "id": 13947,
+            "label": "Renault",
+            "unit_price": "19450.0",
+            "unit_price_without_tax": "19450.0",
             "unit_tax": "0.0"
           },
           {
-            "id": 11895,
+            "id": 13948,
             "label": "Renault",
-            "unit_price": "22050.0",
-            "unit_price_without_tax": "18375.0",
-            "unit_tax": "3675.0"
-          },
-          {
-            "id": 11896,
-            "label": "Renault",
-            "unit_price": "13680.0",
-            "unit_price_without_tax": "12966.82",
-            "unit_tax": "713.18"
+            "unit_price": "16305.0",
+            "unit_price_without_tax": "14822.73",
+            "unit_tax": "1482.27"
           }
         ],
         "pagination": {
@@ -1612,53 +1666,53 @@
       "response_data": {
         "products": [
           {
-            "id": 11927,
+            "id": 13979,
             "label": "Renault",
-            "unit_price": "18340.0",
-            "unit_price_without_tax": "18340.0",
+            "unit_price": "26135.0",
+            "unit_price_without_tax": "21779.17",
+            "unit_tax": "4355.83"
+          },
+          {
+            "id": 13980,
+            "label": "Renault",
+            "unit_price": "27445.0",
+            "unit_price_without_tax": "22870.83",
+            "unit_tax": "4574.17"
+          },
+          {
+            "id": 13981,
+            "label": "Renault",
+            "unit_price": "24570.0",
+            "unit_price_without_tax": "23289.1",
+            "unit_tax": "1280.9"
+          },
+          {
+            "id": 13982,
+            "label": "Renault",
+            "unit_price": "22560.0",
+            "unit_price_without_tax": "21383.89",
+            "unit_tax": "1176.11"
+          },
+          {
+            "id": 13983,
+            "label": "Renault",
+            "unit_price": "25210.0",
+            "unit_price_without_tax": "25210.0",
             "unit_tax": "0.0"
           },
           {
-            "id": 11928,
+            "id": 13984,
             "label": "Renault",
-            "unit_price": "20350.0",
-            "unit_price_without_tax": "19289.1",
-            "unit_tax": "1060.9"
-          },
-          {
-            "id": 11929,
-            "label": "Renault",
-            "unit_price": "28420.0",
-            "unit_price_without_tax": "28420.0",
+            "unit_price": "8840.0",
+            "unit_price_without_tax": "8840.0",
             "unit_tax": "0.0"
           },
           {
-            "id": 11930,
+            "id": 13985,
             "label": "Renault",
-            "unit_price": "27830.0",
-            "unit_price_without_tax": "25300.0",
-            "unit_tax": "2530.0"
-          },
-          {
-            "id": 11931,
-            "label": "Renault",
-            "unit_price": "27545.0",
-            "unit_price_without_tax": "26109.0",
-            "unit_tax": "1436.0"
-          },
-          {
-            "id": 11932,
-            "label": "Renault",
-            "unit_price": "11335.0",
-            "unit_price_without_tax": "9445.83",
-            "unit_tax": "1889.17"
-          },
-          {
-            "id": 11933,
-            "label": "Renault",
-            "unit_price": "24960.0",
-            "unit_price_without_tax": "23658.77",
-            "unit_tax": "1301.23"
+            "unit_price": "29485.0",
+            "unit_price_without_tax": "27947.87",
+            "unit_tax": "1537.13"
           }
         ],
         "pagination": {

@@ -96,7 +96,7 @@ describe InvoicesController do
             id: invoice.invoice_lines[0].id,
             _destroy: true
           }]
-        }}
+        }}, as: :json
         expect(response.status).to eq 200
 
         expect(invoice.reload.invoice_lines.size).to eq 0
@@ -111,7 +111,7 @@ describe InvoicesController do
             id: invoice.invoice_lines[0].id,
             quantity: line.quantity + 1
           }]
-        }}
+        }}, as: :json
         expect(response.status).to eq 200
 
         expect(invoice.reload.invoice_lines.first.quantity).to eq(line.quantity + 1)
@@ -131,7 +131,7 @@ describe InvoicesController do
             vat_rate: '20',
             price: 100,
           }]
-        }}
+        }}, as: :json
         expect(response.status).to eq 200
 
         expect(invoice.reload.invoice_lines.size).to eq(line_count + 1)
@@ -146,7 +146,7 @@ describe InvoicesController do
     it 'works properly with only a customer' do
       post '/invoices', params: { invoice: {
         customer_id: customer.id,
-      }}
+      }}, as: :json
 
       expect(response.status).to eq 200
     end
@@ -167,7 +167,7 @@ describe InvoicesController do
           price: 120,
           tax: 20,
         }]
-      }}
+      }}, as: :json
 
       expect(response.status).to eq 200
       id = response.parsed[:id]
