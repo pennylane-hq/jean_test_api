@@ -11,7 +11,7 @@ class Invoice < ApplicationRecord
 
   validate :cannot_modify_finalized_invoice
 
-  searchable_by :paid, :date, :deadline, :customer_id, :'invoice_lines.product_id',
+  searchable_by :paid, :date, :deadline, :customer_id, :finalized, :'invoice_lines.product_id',
     any: %i[invoice_lines.label customer.first_name customer.last_name]
 
   private

@@ -11,6 +11,11 @@ class InvoicesController < ApplicationController
   end
 
   api!
+  def show
+    render 'invoices/_invoice', locals: { invoice: @invoice }
+  end
+
+  api!
   def update
     @invoice.update!(invoice_params)
 

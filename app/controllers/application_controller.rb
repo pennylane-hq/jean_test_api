@@ -21,6 +21,16 @@ class ApplicationController < ActionController::API
     )
   end
 
+  rescue_from ActiveRecord::RecordInvalid do |exception|
+    render(
+      json: {
+        message: exception.message,
+        details: exception.record.errors.details,
+      },
+      status: :unprocessable_entity,
+    )
+  end
+
   rescue_from NoSessionError do
     render plain: 'X-SESSION header is missing or invalid', status: :bad_request
   end

@@ -15,6 +15,34 @@ describe InvoicesController do
       end
     end
 
+    describe 'pagination' do
+      let!(:invoices) { 26.times.map { create(:invoice, invoice_lines: [build(:invoice_line)]) } }
+
+      it 'returns the first 25 entries without params' do
+        get '/invoices'
+        expect(response.status).to eq 200
+        expect(response.parsed[:invoices].pluck(:id)).to eq invoices[0...25].map(&:id)
+      end
+
+      it 'respects per_page param' do
+        get '/invoices', params: { per_page: 3 }
+        expect(response.status).to eq 200
+        expect(response.parsed[:invoices].pluck(:id)).to eq invoices[0...3].map(&:id)
+      end
+
+      it 'respects page param' do
+        get '/invoices', params: { per_page: 3, page: 2 }
+        expect(response.status).to eq 200
+        expect(response.parsed[:invoices].pluck(:id)).to eq invoices[3...6].map(&:id)
+      end
+
+      it 'returns a partial page when no more results' do
+        get '/invoices', params: { per_page: 11, page: 3 }
+        expect(response.status).to eq 200
+        expect(response.parsed[:invoices].pluck(:id)).to eq invoices[22..].map(&:id)
+      end
+    end
+
     describe 'searching by customer' do
       it 'works' do
         get '/invoices', params: { search: [{
@@ -86,6 +114,20 @@ describe InvoicesController do
     end
   end
 
+  describe 'show' do
+    let(:invoice) { create(:invoice, invoice_lines: 2.times.map { build(:invoice_line) }) }
+
+    it 'returns the invoice with nested objects' do
+      get "/invoices/#{invoice.id}"
+
+      expect(response.status).to eq 200
+      expect(response.parsed[:customer][:id]).to be_present
+      expect(response.parsed[:invoice_lines].size).to eq 2
+      expect(response.parsed[:invoice_lines][0][:product_id]).to be_present
+      expect(response.parsed[:invoice_lines][1][:product_id]).to be_present
+    end
+  end
+
   describe '#update' do
     let(:invoice) { create(:invoice, invoice_lines: [build(:invoice_line)]) }
 
@@ -142,6 +184,15 @@ describe InvoicesController do
   describe 'creating an invoice' do
     let(:customer) { create(:customer) }
     let(:product) { create(:product) }
+
+    it 'renders a validation error if no customer is given' do
+      post '/invoices', params: { invoice: {
+        date: Date.current
+      } }
+
+      expect(response.status).to eq 422
+      expect(response.parsed[:message]).to include 'Customer must exist'
+    end
 
     it 'works properly with only a customer' do
       post '/invoices', params: { invoice: {
