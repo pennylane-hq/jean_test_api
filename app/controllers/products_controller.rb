@@ -1,5 +1,4 @@
 class ProductsController < ApplicationController
-  api!
   def search
     query = params['query']
 

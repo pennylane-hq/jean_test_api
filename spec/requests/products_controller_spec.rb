@@ -1,6 +1,15 @@
 require 'rails_helper'
 
 describe ProductsController do
+  include Committee::Rails::Test::Methods
+
+  def committee_options
+    @committee_options ||= {
+      schema_path: Rails.root.join('schema.yml').to_s,
+      parse_response_by_content_type: true,
+    }
+  end
+
   describe '#search' do
     let!(:clio) { create(:product, label: 'Renault Clio') }
     let!(:clio_2) { create(:product, label: 'Renault Clio 2') }
@@ -11,6 +20,7 @@ describe ProductsController do
 
     it 'works when searching a brand' do
       get '/products/search', params: { query: 'Renault' }
+      assert_response_schema_confirm
 
       results = response.parsed[:products]
 
@@ -24,6 +34,8 @@ describe ProductsController do
 
     it 'works when searching with a space' do
       get '/products/search', params: { query: 'Renault Clio' }
+      assert_response_schema_confirm
+
       results = response.parsed[:products]
 
       expect(results.size).to eq 2
@@ -35,6 +47,8 @@ describe ProductsController do
 
     it 'works when searching part of word' do
       get '/products/search', params: { query: '07' }
+      assert_response_schema_confirm
+
       results = response.parsed[:products]
 
       expect(results.size).to eq 3
@@ -55,6 +69,7 @@ describe ProductsController do
 
     it 'paginates by 25 without params' do
       get '/products/search', params: { query: 'Renault' }
+      assert_response_schema_confirm
 
       expect(response.parsed[:products].size).to eq 25
 
@@ -69,6 +84,7 @@ describe ProductsController do
 
     it 'respects page param' do
       get '/products/search', params: { query: 'Renault', page: 2 }
+      assert_response_schema_confirm
 
       expect(response.parsed[:products].size).to eq 5
 
@@ -83,6 +99,7 @@ describe ProductsController do
 
     it 'respects per_page param' do
       get '/products/search', params: { query: 'Renault', per_page: 7 }
+      assert_response_schema_confirm
 
       expect(response.parsed[:products].size).to eq 7
 

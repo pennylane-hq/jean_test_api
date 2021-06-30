@@ -1,13 +1,21 @@
 class ApplicationController < ActionController::API
-  load_resource
+  load_resource except: %i[schema]
   before_action :set_json_format
-  before_action :load_session, prepend: true
+  before_action :load_session, prepend: true, except: %i[schema]
 
   class NoSessionError < Exception
   end
 
   def index
     render html: "Veuillez vous référer à l'énoncé pour ce qui concerne l'utilisation de l'API"
+  end
+
+  def schema
+    render json: YAML.safe_load(
+      File.read(
+        Rails.root.join('schema.yml').to_s,
+      ),
+    ).as_json
   end
 
   rescue_from ActiveRecord::RecordNotDestroyed do |exception|

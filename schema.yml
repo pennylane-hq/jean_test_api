@@ -1,0 +1,124 @@
+openapi: 3.0.3
+info:
+  title: Jean Test API
+  description: 'validate me with https://editor.swagger.io/'
+  contact:
+    email: tech@pennylane.tech
+  version: 1.0.0
+tags:
+  - name: JeanTestAPI
+servers:
+  - url: 'https://app.pennylane.tech'
+paths:
+  '/products/search':
+    get:
+      operationId: getProductSearch
+      summary: Search products
+      parameters:
+        - $ref: '#/components/parameters/query'
+      responses:
+        '200':
+          description: foobar
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  pagination:
+                    $ref: '#/components/schemas/Pagination'
+                  products:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Product'
+                required:
+                  - pagination
+                  - products
+components:
+  parameters:
+    query:
+      description: foobar
+      in: query
+      name: query
+      required: true
+      schema:
+        type: string
+    id:
+      description: Numeric ID of the relevant resource
+      in: path
+      name: id
+      required: true
+      schema:
+        type: integer
+    page:
+      description: 'Pagination: Number of the page'
+      in: query
+      name: page
+      required: false
+      schema:
+        type: integer
+        minimum: 0
+    per_page:
+      description: 'Pagination: Number of items per page'
+      in: query
+      name: per_page
+      required: false
+      schema:
+        type: integer
+        minimum: 1
+    filter:
+      description: Filter object for tables
+      in: query
+      name: filter
+      required: false
+      schema:
+        type: string
+        example: '[{"field":"debit","operator":"eq","value":5}]'
+    sort:
+      description: 'Sort order columns, separated by commas'
+      in: query
+      name: sort
+      required: false
+      schema:
+        type: string
+        example: '+date,-debit'
+  schemas:
+    Pagination:
+      type: object
+      properties:
+        page:
+          type: number
+          example: 2
+        page_size:
+          type: number
+          example: 25
+        total_pages:
+          type: number
+          example: 2
+        total_entries:
+          type: number
+          example: 30
+      required:
+        - page
+        - page_size
+        - total_pages
+        - total_entries
+    Product:
+      type: object
+      properties:
+        id:
+          type: number
+          example: 67
+        label:
+          type: string
+          example: Tesla Model S
+        unit_price:
+          type: string
+          example: 1980.00
+        unit_price_without_tax:
+          type: string
+          example: 1800.00
+        unit_tax:
+          type: string
+          example: 180.00
+
+

@@ -1,5 +1,4 @@
 class InvoicesController < ApplicationController
-  api!
   def index
     @invoices = Invoice
       .where(session_id: @session&.id)
