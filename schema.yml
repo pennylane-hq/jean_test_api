@@ -12,7 +12,7 @@ servers:
 paths:
   '/products/search':
     get:
-      operationId: getProductSearch
+      operationId: getProductsSearch
       summary: Search products
       parameters:
         - $ref: '#/components/parameters/query'
@@ -33,6 +33,29 @@ paths:
                 required:
                   - pagination
                   - products
+  '/customers/search':
+    get:
+      operationId: getCustomersSearch
+      summary: Search customers
+      parameters:
+        - $ref: '#/components/parameters/query'
+      responses:
+        '200':
+          description: foobar
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  pagination:
+                    $ref: '#/components/schemas/Pagination'
+                  products:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Customer'
+                required:
+                  - pagination
+                  - customers
 components:
   parameters:
     query:
@@ -120,5 +143,30 @@ components:
         unit_tax:
           type: string
           example: 180.00
-
-
+    Customer:
+      type: object
+      properties:
+        id:
+          type: number
+          example: 6773
+        first_name:
+          type: string
+          example: Jean
+        last_name:
+          type: string
+          example: Dupont
+        address:
+          type: string
+          example: 9 impasse Sauvey
+        zip_code:
+          type: string
+          example: "50100"
+        city:
+          type: string
+          example: Cherbourg
+        country:
+          type: string
+          example: France
+        country_code:
+          type: string
+          example: FR
