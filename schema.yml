@@ -92,17 +92,17 @@ paths:
           schema:
             type: number
         - name: filter
-          description: Filter object for tables
+          description: Filter object for tables (click "Try it out" to view an example)
           in: query
           schema:
             type: string
-            example: '[{"field":"customer_id","operator":"eq","value":5}]'
+          example: '[{"field":"customer_id","operator":"eq","value":5}]'
         - name: sort
-          description: Sort order columns, separated by commas
+          description: Sort order columns, separated by commas (click "Try it out" to view an example)
           in: query
           schema:
             type: string
-            example: '+date,-amount'
+          example: '+date,-amount'
       responses:
         '200':
           description: foobar
