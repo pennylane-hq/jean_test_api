@@ -29,6 +29,7 @@ describe InvoicesController do
 
       it 'returns the first 25 entries without params' do
         get '/invoices'
+        assert_request_schema_confirm
         assert_response_schema_confirm
 
         expect(response.status).to eq 200
@@ -37,6 +38,7 @@ describe InvoicesController do
 
       it 'respects per_page param' do
         get '/invoices', params: { per_page: 3 }
+        assert_request_schema_confirm
         assert_response_schema_confirm
 
         expect(response.status).to eq 200
@@ -45,6 +47,7 @@ describe InvoicesController do
 
       it 'respects page param' do
         get '/invoices', params: { per_page: 3, page: 2 }
+        assert_request_schema_confirm
         assert_response_schema_confirm
 
         expect(response.status).to eq 200
@@ -53,6 +56,7 @@ describe InvoicesController do
 
       it 'returns a partial page when no more results' do
         get '/invoices', params: { per_page: 11, page: 3 }
+        assert_request_schema_confirm
         assert_response_schema_confirm
 
         expect(response.status).to eq 200
@@ -67,6 +71,7 @@ describe InvoicesController do
           operator: 'search',
           value: '2',
         }].to_json }
+        assert_request_schema_confirm
         assert_response_schema_confirm
         expect(response.status).to eq 200
 
@@ -79,6 +84,7 @@ describe InvoicesController do
           operator: 'eq',
           value: invoices[0].customer.id,
         }].to_json }
+        assert_request_schema_confirm
         assert_response_schema_confirm
         expect(response.status).to eq 200
 
@@ -92,6 +98,7 @@ describe InvoicesController do
           operator: 'search_any',
           value: '2'
         }].to_json }
+        assert_request_schema_confirm
         assert_response_schema_confirm
         expect(response.status).to eq 200
 
@@ -114,6 +121,7 @@ describe InvoicesController do
           operator: 'eq',
           value: invoice2.customer_id,
         }].to_json }
+        assert_request_schema_confirm
         assert_response_schema_confirm
         expect(response.status).to eq 200
 
@@ -127,6 +135,7 @@ describe InvoicesController do
           operator: 'in',
           value: invoices[0..2].map(&:customer_id),
         }].to_json }
+        assert_request_schema_confirm
         assert_response_schema_confirm
         expect(response.status).to eq 200
 
@@ -141,6 +150,7 @@ describe InvoicesController do
 
     it 'returns the invoice with nested objects' do
       get "/invoices/#{invoice.id}"
+      assert_request_schema_confirm
       assert_response_schema_confirm
 
       expect(response.status).to eq 200
@@ -162,6 +172,7 @@ describe InvoicesController do
             _destroy: true
           }]
         }}, as: :json
+        assert_request_schema_confirm
         assert_response_schema_confirm
         expect(response.status).to eq 200
 
@@ -178,6 +189,7 @@ describe InvoicesController do
             quantity: line.quantity + 1
           }]
         }}, as: :json
+        assert_request_schema_confirm
         assert_response_schema_confirm
         expect(response.status).to eq 200
 
@@ -199,6 +211,7 @@ describe InvoicesController do
             price: 100,
           }]
         }}, as: :json
+        assert_request_schema_confirm
         assert_response_schema_confirm
         expect(response.status).to eq 200
 
@@ -214,7 +227,8 @@ describe InvoicesController do
     it 'renders a validation error if no customer is given' do
       post '/invoices', params: { invoice: {
         date: Date.current
-      } }
+      }}, as: :json
+      assert_request_schema_confirm
       assert_response_schema_confirm
 
       expect(response.status).to eq 422
@@ -225,6 +239,7 @@ describe InvoicesController do
       post '/invoices', params: { invoice: {
         customer_id: customer.id,
       }}, as: :json
+      assert_request_schema_confirm
       assert_response_schema_confirm
 
       expect(response.status).to eq 200
@@ -247,6 +262,7 @@ describe InvoicesController do
           tax: 20,
         }]
       }}, as: :json
+      assert_request_schema_confirm
       assert_response_schema_confirm
 
       expect(response.status).to eq 200
@@ -264,6 +280,9 @@ describe InvoicesController do
 
     it 'works properly' do
       delete "/invoices/#{invoice.id}"
+      assert_request_schema_confirm
+      assert_response_schema_confirm
+
       expect(response.status).to eq 204
 
       expect(Invoice.find_by(id: invoice.id)).to eq nil
@@ -273,6 +292,9 @@ describe InvoicesController do
       invoice.update!(finalized: true)
 
       delete "/invoices/#{invoice.id}"
+      assert_request_schema_confirm
+      assert_response_schema_confirm
+
       expect(response.status).to eq 422
       expect(response.parsed[:message]).to eq 'Une facture finalisée ne peut pas être supprimée'
 

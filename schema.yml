@@ -15,7 +15,18 @@ paths:
       operationId: getProductsSearch
       summary: Search products
       parameters:
-        - $ref: '#/components/parameters/query'
+        - name: query
+          in: query
+          schema:
+            type: string
+        - name: page
+          in: query
+          schema:
+            type: number
+        - name: per_page
+          in: query
+          schema:
+            type: number
       responses:
         '200':
           description: foobar
@@ -38,7 +49,18 @@ paths:
       operationId: getCustomersSearch
       summary: Search customers
       parameters:
-        - $ref: '#/components/parameters/query'
+        - name: query
+          in: query
+          schema:
+            type: string
+        - name: page
+          in: query
+          schema:
+            type: number
+        - name: per_page
+          in: query
+          schema:
+            type: number
       responses:
         '200':
           description: foobar
@@ -60,6 +82,27 @@ paths:
     get:
       operationId: getInvoices
       summary: list invoices
+      parameters:
+        - name: page
+          in: query
+          schema:
+            type: number
+        - name: per_page
+          in: query
+          schema:
+            type: number
+        - name: filter
+          description: Filter object for tables
+          in: query
+          schema:
+            type: string
+            example: '[{"field":"customer_id","operator":"eq","value":5}]'
+        - name: sort
+          description: Sort order columns, separated by commas
+          in: query
+          schema:
+            type: string
+            example: '+date,-amount'
       responses:
         '200':
           description: foobar
@@ -80,6 +123,14 @@ paths:
     post:
       operationId: postInvoice
       summary: create an invoice
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                invoice:
+                  $ref: '#/components/schemas/InvoiceRequestPayload'
       responses:
         '200':
           description: foobar
@@ -94,23 +145,23 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
   '/invoices/{id}':
-    get:
-      operationId: getInvoice
-      summary: get an invoice
-      parameters:
-        - $ref: '#/components/parameters/id'
-      responses:
-        '200':
-          description: foobar
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Invoice'
     put:
       operationId: putInvoice
       summary: update an invoice
       parameters:
-        - $ref: '#/components/parameters/id'
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                invoice:
+                  $ref: '#/components/schemas/InvoiceRequestPayload'
       responses:
         '200':
           description: foobar
@@ -118,54 +169,41 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Invoice'
+    get:
+      operationId: getInvoice
+      summary: get an invoice
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: foobar
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+    delete:
+      operationId: deleteInvoice
+      summary: delete an invoice
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '204':
+          description: foobar
+        '422':
+          description: foobar
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
 components:
-  parameters:
-    query:
-      description: foobar
-      in: query
-      name: query
-      required: true
-      schema:
-        type: string
-    id:
-      description: Numeric ID of the relevant resource
-      in: path
-      name: id
-      required: true
-      schema:
-        type: integer
-    page:
-      description: 'Pagination: Number of the page'
-      in: query
-      name: page
-      required: false
-      schema:
-        type: integer
-        minimum: 0
-    per_page:
-      description: 'Pagination: Number of items per page'
-      in: query
-      name: per_page
-      required: false
-      schema:
-        type: integer
-        minimum: 1
-    filter:
-      description: Filter object for tables
-      in: query
-      name: filter
-      required: false
-      schema:
-        type: string
-        example: '[{"field":"debit","operator":"eq","value":5}]'
-    sort:
-      description: 'Sort order columns, separated by commas'
-      in: query
-      name: sort
-      required: false
-      schema:
-        type: string
-        example: '+date,-debit'
   schemas:
     Error:
       type: object
@@ -353,3 +391,59 @@ components:
         - total
         - tax
         - invoice_lines
+    InvoiceLineRequestPayload:
+      type: object
+      properties:
+        id:
+          type: number
+          example: 45
+        _destroy:
+          type: boolean
+          example: false
+        product_id:
+          type: number
+          example: 67
+        quantity:
+          type: number
+          example: 1
+        label:
+          type: string
+          example: Tesla Model S with Pennylane logo
+        unit:
+          $ref: '#/components/schemas/unit'
+        vat_rate:
+          $ref: '#/components/schemas/vat_rate'
+        price:
+          oneOf:
+            - type: string
+            - type: number
+          example: "120.00"
+        tax:
+          oneOf:
+            - type: string
+            - type: number
+          example: "20.00"
+    InvoiceRequestPayload:
+      type: object
+      properties:
+        customer_id:
+          type: number
+          example: 6773
+        finalized:
+          type: boolean
+          example: false
+        paid:
+          type: boolean
+          example: true
+        date:
+          type: string
+          example: "2021-02-03"
+          nullable: true
+        deadline:
+          type: string
+          example: "2021-03-05"
+          nullable: true
+        invoice_lines_attributes:
+          type: array
+          items:
+            $ref: '#/components/schemas/InvoiceLineRequestPayload'

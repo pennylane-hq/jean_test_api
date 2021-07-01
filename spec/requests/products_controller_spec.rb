@@ -20,6 +20,7 @@ describe ProductsController do
 
     it 'works when searching a brand' do
       get '/products/search', params: { query: 'Renault' }
+      assert_request_schema_confirm
       assert_response_schema_confirm
 
       results = response.parsed[:products]
@@ -34,6 +35,7 @@ describe ProductsController do
 
     it 'works when searching with a space' do
       get '/products/search', params: { query: 'Renault Clio' }
+      assert_request_schema_confirm
       assert_response_schema_confirm
 
       results = response.parsed[:products]
@@ -47,6 +49,7 @@ describe ProductsController do
 
     it 'works when searching part of word' do
       get '/products/search', params: { query: '07' }
+      assert_request_schema_confirm
       assert_response_schema_confirm
 
       results = response.parsed[:products]
@@ -69,6 +72,7 @@ describe ProductsController do
 
     it 'paginates by 25 without params' do
       get '/products/search', params: { query: 'Renault' }
+      assert_request_schema_confirm
       assert_response_schema_confirm
 
       expect(response.parsed[:products].size).to eq 25
@@ -84,6 +88,7 @@ describe ProductsController do
 
     it 'respects page param' do
       get '/products/search', params: { query: 'Renault', page: 2 }
+      assert_request_schema_confirm
       assert_response_schema_confirm
 
       expect(response.parsed[:products].size).to eq 5
@@ -99,6 +104,7 @@ describe ProductsController do
 
     it 'respects per_page param' do
       get '/products/search', params: { query: 'Renault', per_page: 7 }
+      assert_request_schema_confirm
       assert_response_schema_confirm
 
       expect(response.parsed[:products].size).to eq 7
