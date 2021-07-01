@@ -12,7 +12,7 @@ servers:
 paths:
   '/products/search':
     get:
-      operationId: getProductsSearch
+      operationId: getSearchProducts
       summary: Search products
       parameters:
         - name: query
@@ -46,7 +46,7 @@ paths:
                   - products
   '/customers/search':
     get:
-      operationId: getCustomersSearch
+      operationId: getSearchCustomers
       summary: Search customers
       parameters:
         - name: query
@@ -121,7 +121,7 @@ paths:
                   - pagination
                   - invoices
     post:
-      operationId: postInvoice
+      operationId: postInvoices
       summary: create an invoice
       requestBody:
         content:
