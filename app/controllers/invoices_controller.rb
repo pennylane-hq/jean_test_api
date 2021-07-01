@@ -1,5 +1,4 @@
 class InvoicesController < ApplicationController
-  api!
   def index
     @invoices = Invoice
       .where(session_id: @session&.id)
@@ -10,26 +9,22 @@ class InvoicesController < ApplicationController
       .paginate(pagination_params)
   end
 
-  api!
   def show
     render 'invoices/_invoice', locals: { invoice: @invoice }
   end
 
-  api!
   def update
     @invoice.update!(invoice_params)
 
     render 'invoices/_invoice', locals: { invoice: @invoice }
   end
 
-  api!
   def create
     @invoice = Invoice.create!(invoice_params)
 
     render 'invoices/_invoice', locals: { invoice: @invoice }
   end
 
-  api!
   def destroy
     @invoice.destroy!
 

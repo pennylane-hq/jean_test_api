@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  apipie
-
   root to: 'application#index'
+
+  mount OpenApi::Rswag::Ui::Engine => '/api-docs'
+
+  get '/schema' => 'application#schema'
 
   resources :customers, only: %i[show] do
     collection do

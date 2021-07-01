@@ -1,6 +1,15 @@
 require 'rails_helper'
 
 describe CustomersController do
+  include Committee::Rails::Test::Methods
+
+  def committee_options
+    @committee_options ||= {
+      schema_path: Rails.root.join('schema.yml').to_s,
+      parse_response_by_content_type: true,
+    }
+  end
+
   describe '#search' do
     let!(:martin_dupont) { create(:customer, first_name: 'Martin', last_name: 'Dupont') }
     let!(:pierre_dupont) { create(:customer, first_name: 'Pierre', last_name: 'Dupont') }
@@ -11,6 +20,8 @@ describe CustomersController do
 
     it 'works when searching a first_name' do
       get '/customers/search', params: { query: 'Jean' }
+      assert_request_schema_confirm
+      assert_response_schema_confirm
 
       results = response.parsed[:customers]
 
@@ -24,6 +35,9 @@ describe CustomersController do
 
     it 'works when searching with a last_name case-insensitively' do
       get '/customers/search', params: { query: 'dupont' }
+      assert_request_schema_confirm
+      assert_response_schema_confirm
+
       results = response.parsed[:customers]
 
       expect(results.size).to eq 3
@@ -36,6 +50,9 @@ describe CustomersController do
 
     it 'works when searching part of last name' do
       get '/customers/search', params: { query: 'dupon' }
+      assert_request_schema_confirm
+      assert_response_schema_confirm
+
       results = response.parsed[:customers]
 
       expect(results.size).to eq 4
@@ -49,6 +66,9 @@ describe CustomersController do
 
     it 'mixes results for first and last name' do
       get '/customers/search', params: { query: 'martin' }
+      assert_request_schema_confirm
+      assert_response_schema_confirm
+
       results = response.parsed[:customers]
 
       expect(results.size).to eq 2

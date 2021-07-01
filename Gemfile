@@ -25,9 +25,6 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 
-# Api documentation
-gem 'apipie-rails'
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'rspec-rails'
@@ -45,10 +42,10 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "countries", "~> 3.0"
-
-gem "will_paginate", "~> 3.3"
-
-gem "cancancan", "~> 3.2"
-
-gem "faker", "~> 2.15"
+gem 'cancancan'
+gem 'committee'
+gem 'committee-rails'
+gem 'countries'
+gem 'faker'
+gem 'open_api-rswag-ui'
+gem 'will_paginate'
