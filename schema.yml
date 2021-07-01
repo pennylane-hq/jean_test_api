@@ -15,6 +15,11 @@ paths:
       operationId: getSearchProducts
       summary: Search products
       parameters:
+        - name: X-SESSION
+          in: header
+          schema:
+            type: string
+          required: true
         - name: query
           in: query
           schema:
@@ -49,6 +54,11 @@ paths:
       operationId: getSearchCustomers
       summary: Search customers
       parameters:
+        - name: X-SESSION
+          in: header
+          schema:
+            type: string
+          required: true
         - name: query
           in: query
           schema:
@@ -83,6 +93,11 @@ paths:
       operationId: getInvoices
       summary: list invoices
       parameters:
+        - name: X-SESSION
+          in: header
+          schema:
+            type: string
+          required: true
         - name: page
           in: query
           schema:
@@ -123,6 +138,12 @@ paths:
     post:
       operationId: postInvoices
       summary: create an invoice
+      parameters:
+        - name: X-SESSION
+          in: header
+          schema:
+            type: string
+          required: true
       requestBody:
         content:
           application/json:
@@ -149,6 +170,12 @@ paths:
       operationId: putInvoice
       summary: update an invoice
       parameters:
+        - name: X-SESSION
+          in: header
+          schema:
+            type: string
+          required: true
+      parameters:
         - name: id
           in: path
           required: true
@@ -173,6 +200,12 @@ paths:
       operationId: getInvoice
       summary: get an invoice
       parameters:
+        - name: X-SESSION
+          in: header
+          schema:
+            type: string
+          required: true
+      parameters:
         - name: id
           in: path
           required: true
@@ -188,6 +221,12 @@ paths:
     delete:
       operationId: deleteInvoice
       summary: delete an invoice
+      parameters:
+        - name: X-SESSION
+          in: header
+          schema:
+            type: string
+          required: true
       parameters:
         - name: id
           in: path
