@@ -56,6 +56,68 @@ paths:
                 required:
                   - pagination
                   - customers
+  '/invoices':
+    get:
+      operationId: getInvoices
+      summary: list invoices
+      responses:
+        '200':
+          description: foobar
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  pagination:
+                    $ref: '#/components/schemas/Pagination'
+                  invoices:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Invoice'
+                required:
+                  - pagination
+                  - invoices
+    post:
+      operationId: postInvoice
+      summary: create an invoice
+      responses:
+        '200':
+          description: foobar
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+        '422':
+          description: foobar
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  '/invoices/{id}':
+    get:
+      operationId: getInvoice
+      summary: get an invoice
+      parameters:
+        - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          description: foobar
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+    put:
+      operationId: putInvoice
+      summary: update an invoice
+      parameters:
+        - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          description: foobar
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
 components:
   parameters:
     query:
@@ -105,6 +167,13 @@ components:
         type: string
         example: '+date,-debit'
   schemas:
+    Error:
+      type: object
+      properties:
+        message:
+          type: string
+      required:
+        - message
     Pagination:
       type: object
       properties:
@@ -125,6 +194,12 @@ components:
         - page_size
         - total_pages
         - total_entries
+    unit:
+      type: string
+      enum: ['hour', 'day', 'piece']
+    vat_rate:
+      type: string
+      enum: ['0', '5.5', '10', '20']
     Product:
       type: object
       properties:
@@ -134,6 +209,10 @@ components:
         label:
           type: string
           example: Tesla Model S
+        vat_rate:
+          $ref: '#/components/schemas/vat_rate'
+        unit:
+          $ref: '#/components/schemas/unit'
         unit_price:
           type: string
           example: 1980.00
@@ -143,6 +222,14 @@ components:
         unit_tax:
           type: string
           example: 180.00
+      required:
+        - id
+        - label
+        - unit
+        - unit_price
+        - unit_price_without_tax
+        - unit_tax
+        - vat_rate
     Customer:
       type: object
       properties:
@@ -170,3 +257,99 @@ components:
         country_code:
           type: string
           example: FR
+      required:
+        - id
+        - first_name
+        - last_name
+        - address
+        - zip_code
+        - city
+        - country
+        - country_code
+    InvoiceLine:
+      type: object
+      properties:
+        id:
+          type: number
+          example: 9181
+        invoice_id:
+          type: number
+          example: 5785
+        product_id:
+          type: number
+          example: 67
+        quantity:
+          type: number
+          example: 1
+        label:
+          type: string
+          example: Tesla Model S with Pennylane logo
+        unit:
+          $ref: '#/components/schemas/unit'
+        vat_rate:
+          $ref: '#/components/schemas/vat_rate'
+        price:
+          type: string
+          example: "1s20.00"
+        tax:
+          type: string
+          example: "20.00"
+        product:
+          $ref: '#/components/schemas/Product'
+      required:
+        - id
+        - invoice_id
+        - product_id
+        - quantity
+        - label
+        - unit
+        - vat_rate
+        - price
+        - tax
+        - product
+    Invoice:
+      type: object
+      properties:
+        id:
+          type: number
+          example: 5785
+        customer_id:
+          type: number
+          example: 6773
+          nullable: true
+        finalized:
+          type: boolean
+          example: false
+        paid:
+          type: boolean
+          example: true
+        date:
+          type: string
+          example: "2021-02-03"
+          nullable: true
+        deadline:
+          type: string
+          example: "2021-03-05"
+          nullable: true
+        total:
+          type: string
+          example: "120.00"
+          nullable: true
+        tax:
+          type: string
+          example: "20.00"
+          nullable: true
+        invoice_lines:
+          type: array
+          items:
+            $ref: '#/components/schemas/InvoiceLine'
+      required:
+        - id
+        - customer_id
+        - finalized
+        - paid
+        - date
+        - deadline
+        - total
+        - tax
+        - invoice_lines
