@@ -3,7 +3,7 @@ info:
   title: Jean Test API
   description: 'validate me with https://editor.swagger.io/'
   contact:
-    email: tech@pennylane.tech
+    email: thierry@pennylane.tech
   version: 1.0.0
 tags:
   - name: JeanTestAPI
@@ -34,7 +34,7 @@ paths:
             type: number
       responses:
         '200':
-          description: foobar
+          description: the matching products
           content:
             application/json:
               schema:
@@ -73,7 +73,7 @@ paths:
             type: number
       responses:
         '200':
-          description: foobar
+          description: the matching customers
           content:
             application/json:
               schema:
@@ -120,7 +120,7 @@ paths:
           example: '+date,-amount'
       responses:
         '200':
-          description: foobar
+          description: the matching invoices
           content:
             application/json:
               schema:
@@ -154,17 +154,11 @@ paths:
                   $ref: '#/components/schemas/InvoiceRequestPayload'
       responses:
         '200':
-          description: foobar
+          description: the created invoice
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Invoice'
-        '422':
-          description: foobar
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
   '/invoices/{id}':
     put:
       operationId: putInvoice
@@ -175,7 +169,6 @@ paths:
           schema:
             type: string
           required: true
-      parameters:
         - name: id
           in: path
           required: true
@@ -191,7 +184,7 @@ paths:
                   $ref: '#/components/schemas/InvoiceRequestPayload'
       responses:
         '200':
-          description: foobar
+          description: the modified invoice
           content:
             application/json:
               schema:
@@ -205,7 +198,6 @@ paths:
           schema:
             type: string
           required: true
-      parameters:
         - name: id
           in: path
           required: true
@@ -213,7 +205,7 @@ paths:
             type: integer
       responses:
         '200':
-          description: foobar
+          description: returns the matching invoice
           content:
             application/json:
               schema:
@@ -227,7 +219,6 @@ paths:
           schema:
             type: string
           required: true
-      parameters:
         - name: id
           in: path
           required: true
@@ -235,13 +226,7 @@ paths:
             type: integer
       responses:
         '204':
-          description: foobar
-        '422':
-          description: foobar
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
+          description: (empty) invoice has been deleted
 components:
   schemas:
     Error:
