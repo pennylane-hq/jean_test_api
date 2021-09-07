@@ -131,7 +131,14 @@ paths:
                   invoices:
                     type: array
                     items:
-                      $ref: '#/components/schemas/Invoice'
+                      allOf:
+                        - type: object
+                          $ref: '#/components/schemas/Invoice'
+                        - type: object
+                          properties:
+                            - customer:
+                              type: object
+                              $ref: '#/components/schemas/Customer'
                 required:
                   - pagination
                   - invoices
