@@ -19,7 +19,6 @@ paths:
           in: header
           schema:
             type: string
-          required: true
         - name: query
           in: query
           schema:
@@ -58,7 +57,6 @@ paths:
           in: header
           schema:
             type: string
-          required: true
         - name: query
           in: query
           schema:
@@ -97,7 +95,6 @@ paths:
           in: header
           schema:
             type: string
-          required: true
         - name: page
           in: query
           schema:
@@ -150,7 +147,6 @@ paths:
           in: header
           schema:
             type: string
-          required: true
       requestBody:
         content:
           application/json:
@@ -175,7 +171,6 @@ paths:
           in: header
           schema:
             type: string
-          required: true
         - name: id
           in: path
           required: true
@@ -204,7 +199,6 @@ paths:
           in: header
           schema:
             type: string
-          required: true
         - name: id
           in: path
           required: true
@@ -225,7 +219,6 @@ paths:
           in: header
           schema:
             type: string
-          required: true
         - name: id
           in: path
           required: true
