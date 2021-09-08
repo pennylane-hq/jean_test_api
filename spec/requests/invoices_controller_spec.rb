@@ -229,7 +229,6 @@ describe InvoicesController do
         date: Date.current
       }}, as: :json
       assert_request_schema_confirm
-      assert_response_schema_confirm
 
       expect(response.status).to eq 422
       expect(response.parsed[:message]).to include 'Customer must exist'
@@ -293,7 +292,6 @@ describe InvoicesController do
 
       delete "/invoices/#{invoice.id}"
       assert_request_schema_confirm
-      assert_response_schema_confirm
 
       expect(response.status).to eq 422
       expect(response.parsed[:message]).to eq 'Une facture finalisée ne peut pas être supprimée'
