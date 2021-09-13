@@ -66,7 +66,7 @@ describe InvoicesController do
 
     describe 'searching by customer' do
       it 'works' do
-        get '/invoices', params: { search: [{
+        get '/invoices', params: { filter: [{
           field: 'customer.first_name',
           operator: 'search',
           value: '2',
@@ -79,7 +79,7 @@ describe InvoicesController do
       end
 
       it 'works with the customer_id' do
-        get '/invoices', params: { search: [{
+        get '/invoices', params: { filter: [{
           field: 'customer_id',
           operator: 'eq',
           value: invoices[0].customer.id,
@@ -94,7 +94,7 @@ describe InvoicesController do
 
     describe 'search_any' do
       it 'works' do
-        get '/invoices', params: { search: [{
+        get '/invoices', params: { filter: [{
           operator: 'search_any',
           value: '2'
         }].to_json }
@@ -116,7 +116,7 @@ describe InvoicesController do
       it 'works with eq operator' do
         invoice2 = create(:invoice, customer_id: invoices[0].customer_id)
 
-        get '/invoices', params: { search: [{
+        get '/invoices', params: { filter: [{
           field: 'customer_id',
           operator: 'eq',
           value: invoice2.customer_id,
@@ -130,7 +130,7 @@ describe InvoicesController do
       end
 
       it 'works with in operator' do
-        get '/invoices', params: { search: [{
+        get '/invoices', params: { filter: [{
           field: 'customer_id',
           operator: 'in',
           value: invoices[0..2].map(&:customer_id),
