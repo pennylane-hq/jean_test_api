@@ -8,7 +8,7 @@ info:
 tags:
   - name: JeanTestAPI
 servers:
-  - url: 'https://jean-test-api.herokuapp.com'
+  - url: '/'
 paths:
   '/products/search':
     get:

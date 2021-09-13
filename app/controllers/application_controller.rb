@@ -55,7 +55,7 @@ class ApplicationController < ActionController::API
   end
 
   def search_params
-    JSON.parse(params[:search], symbolize_names: true)
+    JSON.parse(params[:filter], symbolize_names: true)
   rescue
     []
   end
