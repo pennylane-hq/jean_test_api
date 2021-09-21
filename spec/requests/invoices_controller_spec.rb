@@ -228,7 +228,6 @@ describe InvoicesController do
       post '/invoices', params: { invoice: {
         date: Date.current
       }}, as: :json
-      assert_request_schema_confirm
 
       expect(response.status).to eq 422
       expect(response.parsed[:message]).to include 'Customer must exist'
