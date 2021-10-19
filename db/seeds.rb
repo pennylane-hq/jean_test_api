@@ -28,7 +28,7 @@ end
 
 invoice_count = Invoice.group(:session_id).count
 Session.all.each do |session|
-  (15 - invoice_count[session].to_i).times do
+  (15 - invoice_count[session.id].to_i).times do
     date = Date.current + Random.rand(-10..30).days
     Invoice.create!(
       session_id: session.id,
