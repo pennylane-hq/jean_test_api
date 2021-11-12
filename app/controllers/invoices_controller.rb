@@ -6,6 +6,7 @@ class InvoicesController < ApplicationController
       .preload(:customer, invoice_lines: :product)
       .search_by(search_params)
       .distinct
+      .order(created_at: :desc)
       .paginate(pagination_params)
   end
 
