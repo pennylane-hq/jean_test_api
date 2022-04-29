@@ -11,10 +11,16 @@ class InvoicesController < ApplicationController
   end
 
   def show
+    ActiveRecord::Associations::Preloader.new(
+      records: [@invoice],
+      associations: [invoice_lines: :product],
+    ).call
+
     render 'invoices/_invoice', locals: { invoice: @invoice }
   end
 
   def update
+
     @invoice.update!(invoice_params)
 
     render 'invoices/_invoice', locals: { invoice: @invoice }

@@ -33,7 +33,7 @@ describe InvoicesController do
         assert_response_schema_confirm
 
         expect(response.status).to eq 200
-        expect(response.parsed[:invoices].pluck(:id)).to eq invoices[0...25].map(&:id)
+        expect(response.parsed[:invoices].pluck(:id)).to eq invoices[-25..].reverse.map(&:id)
       end
 
       it 'respects per_page param' do
@@ -42,7 +42,7 @@ describe InvoicesController do
         assert_response_schema_confirm
 
         expect(response.status).to eq 200
-        expect(response.parsed[:invoices].pluck(:id)).to eq invoices[0...3].map(&:id)
+        expect(response.parsed[:invoices].pluck(:id)).to eq invoices[-3..].reverse.map(&:id)
       end
 
       it 'respects page param' do
@@ -51,7 +51,7 @@ describe InvoicesController do
         assert_response_schema_confirm
 
         expect(response.status).to eq 200
-        expect(response.parsed[:invoices].pluck(:id)).to eq invoices[3...6].map(&:id)
+        expect(response.parsed[:invoices].pluck(:id)).to eq invoices[-6...-3].reverse.map(&:id)
       end
 
       it 'returns a partial page when no more results' do
@@ -60,7 +60,7 @@ describe InvoicesController do
         assert_response_schema_confirm
 
         expect(response.status).to eq 200
-        expect(response.parsed[:invoices].pluck(:id)).to eq invoices[22..].map(&:id)
+        expect(response.parsed[:invoices].pluck(:id)).to eq invoices[...4].reverse.map(&:id)
       end
     end
 

@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   root to: 'application#index'
 
-  mount OpenApi::Rswag::Ui::Engine => '/api-docs'
+  # mount OpenApi::Rswag::Ui::Engine => '/api-docs'
+  mount Rswag::Ui::Engine => '/api-docs'
 
   get '/schema' => 'application#schema'
 
