@@ -429,23 +429,6 @@ components:
         quantity:
           type: number
           example: 1
-        label:
-          type: string
-          example: Tesla Model S with Pennylane logo
-        unit:
-          $ref: '#/components/schemas/unit'
-        vat_rate:
-          $ref: '#/components/schemas/vat_rate'
-        price:
-          oneOf:
-            - type: string
-            - type: number
-          example: "120.00"
-        tax:
-          oneOf:
-            - type: string
-            - type: number
-          example: "20.00"
     InvoiceLineCreatePayload:
       type: object
       properties:
@@ -455,23 +438,6 @@ components:
         quantity:
           type: number
           example: 1
-        label:
-          type: string
-          example: Tesla Model S with Pennylane logo
-        unit:
-          $ref: '#/components/schemas/unit'
-        vat_rate:
-          $ref: '#/components/schemas/vat_rate'
-        price:
-          oneOf:
-            - type: string
-            - type: number
-          example: "120.00"
-        tax:
-          oneOf:
-            - type: string
-            - type: number
-          example: "20.00"
       required:
         - product_id
     InvoiceUpdatePayload:
