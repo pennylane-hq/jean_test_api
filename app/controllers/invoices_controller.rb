@@ -66,7 +66,7 @@ class InvoicesController < ApplicationController
   end
 
   def sort_params
-    return { created_at: :desc } unless params[:sort].present?
+    return [{ created_at: :desc }] unless params[:sort].present?
 
     valid_sorts = params[:sort].split(',').map do |sort_param|
       sort_param = sort_param.strip
