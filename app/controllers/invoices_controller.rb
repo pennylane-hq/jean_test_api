@@ -6,7 +6,7 @@ class InvoicesController < ApplicationController
       .preload(:customer, invoice_lines: :product)
       .search_by(search_params)
       .distinct
-      .order(created_at: :desc)
+      .order(sort_params)
       .paginate(pagination_params)
   end
 
@@ -61,5 +61,16 @@ class InvoicesController < ApplicationController
       )
     result[:session_id] = @session.id unless Rails.env.test?
     result
+  end
+
+  def sort_params
+    return { created_at: :desc } unless params[:sort].present?
+
+    params[:sort].split(',').map do |sort_param|
+      sort_param = sort_param.strip
+      direction = sort_param.start_with?('-') ? :desc : :asc
+      column = sort_param.gsub(/^[+-]/, '').strip
+      { column => direction }
+    end.reduce({}, :merge)
   end
 end
