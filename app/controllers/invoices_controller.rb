@@ -78,6 +78,6 @@ class InvoicesController < ApplicationController
       { column => direction }
     end.compact
 
-    valid_sorts.empty? ? { created_at: :desc } : valid_sorts
+    valid_sorts.empty? ? [{ created_at: :desc }] : valid_sorts
   end
 end
