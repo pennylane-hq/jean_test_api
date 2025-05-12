@@ -8,7 +8,7 @@ class InvoicesController < ApplicationController
       .preload(:customer, invoice_lines: :product)
       .search_by(search_params)
       .distinct
-      .order(sort_params)
+      .order(*sort_params)
       .paginate(pagination_params)
   end
 
@@ -68,7 +68,7 @@ class InvoicesController < ApplicationController
   def sort_params
     return { created_at: :desc } unless params[:sort].present?
 
-    params[:sort].split(',').map do |sort_param|
+    valid_sorts = params[:sort].split(',').map do |sort_param|
       sort_param = sort_param.strip
       direction = sort_param.start_with?('-') ? :desc : :asc
       column = sort_param.gsub(/^[+-]/, '').strip
@@ -76,6 +76,8 @@ class InvoicesController < ApplicationController
       next unless ALLOWED_SORT_COLUMNS.include?(column)
       
       { column => direction }
-    end.compact.reduce({}, :merge)
+    end.compact
+
+    valid_sorts.empty? ? { created_at: :desc } : valid_sorts
   end
 end
