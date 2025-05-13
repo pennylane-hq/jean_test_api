@@ -64,6 +64,34 @@ describe InvoicesController do
       end
     end
 
+    describe 'sorting' do
+      let!(:invoices) do
+        [
+          create(:invoice, date: Date.new(2023, 1, 1)),
+          create(:invoice, date: Date.new(2023, 2, 1)),
+          create(:invoice, date: Date.new(2023, 3, 1))
+        ]
+      end
+
+      it 'sorts by date in ascending order' do
+        get '/invoices', params: { sort: 'date' }
+        assert_request_schema_confirm
+        assert_response_schema_confirm
+
+        expect(response.status).to eq 200
+        expect(response.parsed[:invoices].pluck(:id)).to eq invoices.map(&:id)
+      end
+
+      it 'sorts by date in descending order' do
+        get '/invoices', params: { sort: '-date' }
+        assert_request_schema_confirm
+        assert_response_schema_confirm
+
+        expect(response.status).to eq 200
+        expect(response.parsed[:invoices].pluck(:id)).to eq invoices.reverse.map(&:id)
+      end
+    end
+
     describe 'searching by customer' do
       it 'works' do
         get '/invoices', params: { filter: [{
