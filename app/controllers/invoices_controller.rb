@@ -68,7 +68,7 @@ class InvoicesController < ApplicationController
   def sort_params
     return [{ created_at: :desc }] unless params[:sort].present?
 
-    valid_sorts = params[:sort].split(',').map do |sort_param|
+    valid_sorts = params[:sort].split(',').filter_map do |sort_param|
       sort_param = sort_param.strip
       direction = sort_param.start_with?('-') ? :desc : :asc
       column = sort_param.gsub(/^[+-]/, '').strip
@@ -76,7 +76,7 @@ class InvoicesController < ApplicationController
       next unless ALLOWED_SORT_COLUMNS.include?(column)
       
       { column => direction }
-    end.compact
+    end
 
     valid_sorts.empty? ? [{ created_at: :desc }] : valid_sorts
   end
