@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.1.2'
+ruby '3.4.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 7.0.2'
@@ -33,6 +33,7 @@ gem 'scout_apm'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'rspec-rails'
+  gem 'shoulda-matchers'
   gem 'factory_bot_rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -57,3 +58,12 @@ gem 'rswag-ui'
 gem 'will_paginate'
 
 gem "net-smtp", "~> 0.3.1"
+
+
+
+gem 'base64'
+gem 'bigdecimal'
+gem 'mutex_m'
+gem 'observer'
+gem 'drb'
+gem 'logger'
