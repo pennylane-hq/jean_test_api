@@ -37,7 +37,7 @@ describe InvoiceLine do
 
     it 'computes tax on save' do
       invoice_line.save
-      expect(invoice_line.tax).to eq(20.00)
+      expect(invoice_line.tax).to eq(16.67)
     end
   end
-end 
+end

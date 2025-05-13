@@ -7,6 +7,7 @@ describe InvoicesController do
     @committee_options ||= {
       schema_path: Rails.root.join('schema.yml').to_s,
       parse_response_by_content_type: true,
+      query_hash_key: 'rack.request.query_hash',
     }
   end
 
