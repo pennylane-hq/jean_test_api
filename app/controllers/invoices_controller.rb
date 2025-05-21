@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class InvoicesController < ApplicationController
   ALLOWED_SORT_COLUMNS = %w[created_at updated_at customer_id date deadline total paid finalized id tax].freeze
 
@@ -72,9 +73,9 @@ class InvoicesController < ApplicationController
       sort_param = sort_param.strip
       direction = sort_param.start_with?('-') ? :desc : :asc
       column = sort_param.gsub(/^[+-]/, '').strip
-      
+
       next unless ALLOWED_SORT_COLUMNS.include?(column)
-      
+
       { column => direction }
     end
 

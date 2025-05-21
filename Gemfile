@@ -25,17 +25,17 @@ gem 'jbuilder', '~> 2.7'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 
-gem "rack-timeout"
-gem "puma_worker_killer"
-gem "barnes"
+gem 'barnes'
+gem 'puma_worker_killer'
+gem 'rack-timeout'
 gem 'scout_apm'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
-  gem 'factory_bot_rails'
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
@@ -45,9 +45,20 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+group :rubocop do
+  gem 'rubocop', require: false
+  gem 'rubocop-factory_bot', require: false
+  gem 'rubocop-inflector', require: false
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'rubocop-rspec_rails', require: false
+end
 
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
+gem 'activerecord-import'
 gem 'cancancan'
 gem 'committee'
 gem 'committee-rails'
@@ -57,13 +68,11 @@ gem 'rswag-ui'
 # gem 'open_api-rswag-ui'
 gem 'will_paginate'
 
-gem "net-smtp", "~> 0.3.1"
-
-
+gem 'net-smtp', '~> 0.3.1'
 
 gem 'base64'
 gem 'bigdecimal'
-gem 'mutex_m'
-gem 'observer'
 gem 'drb'
 gem 'logger'
+gem 'mutex_m'
+gem 'observer'

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 describe InvoicesController do
@@ -7,7 +9,7 @@ describe InvoicesController do
     @committee_options ||= {
       schema_path: Rails.root.join('schema.yml').to_s,
       parse_response_by_content_type: true,
-      query_hash_key: 'rack.request.query_hash',
+      query_hash_key: 'rack.request.query_hash'
     }
   end
 
@@ -19,8 +21,8 @@ describe InvoicesController do
           customer: build(:customer, first_name: "#{i}"),
           invoice_lines: [
             build(:invoice_line, label: "#{2 * i}"),
-            build(:invoice_line, label: "#{2 * i + 1}"),
-          ],
+            build(:invoice_line, label: "#{2 * i + 1}")
+          ]
         )
       end
     end
@@ -98,7 +100,7 @@ describe InvoicesController do
         get '/invoices', params: { filter: [{
           field: 'customer.first_name',
           operator: 'search',
-          value: '2',
+          value: '2'
         }].to_json }
         assert_request_schema_confirm
         assert_response_schema_confirm
@@ -111,7 +113,7 @@ describe InvoicesController do
         get '/invoices', params: { filter: [{
           field: 'customer_id',
           operator: 'eq',
-          value: invoices[0].customer.id,
+          value: invoices[0].customer.id
         }].to_json }
         assert_request_schema_confirm
         assert_response_schema_confirm
@@ -148,7 +150,7 @@ describe InvoicesController do
         get '/invoices', params: { filter: [{
           field: 'customer_id',
           operator: 'eq',
-          value: invoice2.customer_id,
+          value: invoice2.customer_id
         }].to_json }
         assert_request_schema_confirm
         assert_response_schema_confirm
@@ -162,7 +164,7 @@ describe InvoicesController do
         get '/invoices', params: { filter: [{
           field: 'customer_id',
           operator: 'in',
-          value: invoices[0..2].map(&:customer_id),
+          value: invoices[0..2].map(&:customer_id)
         }].to_json }
         assert_request_schema_confirm
         assert_response_schema_confirm
@@ -200,7 +202,7 @@ describe InvoicesController do
             id: invoice.invoice_lines[0].id,
             _destroy: true
           }]
-        }}, as: :json
+        } }, as: :json
         assert_request_schema_confirm
         assert_response_schema_confirm
         expect(response.status).to eq 200
@@ -217,7 +219,7 @@ describe InvoicesController do
             id: invoice.invoice_lines[0].id,
             quantity: line.quantity + 1
           }]
-        }}, as: :json
+        } }, as: :json
         assert_request_schema_confirm
         assert_response_schema_confirm
         expect(response.status).to eq 200
@@ -237,9 +239,9 @@ describe InvoicesController do
             quantity: 1,
             unit: 'piece',
             vat_rate: '20',
-            price: 100,
+            price: 100
           }]
-        }}, as: :json
+        } }, as: :json
         assert_request_schema_confirm
         assert_response_schema_confirm
         expect(response.status).to eq 200
@@ -256,7 +258,7 @@ describe InvoicesController do
     it 'renders a validation error if no customer is given' do
       post '/invoices', params: { invoice: {
         date: Date.current
-      }}, as: :json
+      } }, as: :json
 
       expect(response.status).to eq 422
       expect(response.parsed[:message]).to include 'Customer must exist'
@@ -264,8 +266,8 @@ describe InvoicesController do
 
     it 'works properly with only a customer' do
       post '/invoices', params: { invoice: {
-        customer_id: customer.id,
-      }}, as: :json
+        customer_id: customer.id
+      } }, as: :json
       assert_request_schema_confirm
       assert_response_schema_confirm
 
@@ -286,9 +288,9 @@ describe InvoicesController do
           label: 'Produit',
           vat_rate: '20',
           price: 120,
-          tax: 20,
+          tax: 20
         }]
-      }}, as: :json
+      } }, as: :json
       assert_request_schema_confirm
       assert_response_schema_confirm
 
