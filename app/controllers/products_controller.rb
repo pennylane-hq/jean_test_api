@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class ProductsController < ApplicationController
   def search
     query = params['query']

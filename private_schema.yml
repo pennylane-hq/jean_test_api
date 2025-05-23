@@ -1,0 +1,76 @@
+openapi: 3.0.3
+info:
+  title: Jean Test API
+  description: 'validate me with https://editor.swagger.io/'
+  contact:
+    email: thierry@pennylane.tech
+  version: 1.0.0
+tags:
+  - name: JeanTestAPI
+servers:
+  - url: '/'
+paths:
+  '/sessions':
+    post:
+      operationId: postSessions
+      summary: Create a new session for a candidate
+      parameters:
+        - name: Authorization
+          in: header
+          description: Bearer token for API authentication
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: 'Thierry Deo'
+              required:
+                - name
+      responses:
+        '201':
+          description: The created session
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Session'
+        '200':
+          description: The exiting session
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Session'
+        '401':
+          description: Unauthorized access
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    Error:
+      type: object
+      properties:
+        message:
+          type: string
+        error:
+          type: string
+      required:
+        - message
+    Session:
+      type: object
+      properties:
+        id:
+          type: integer
+        token:
+          type: string
+          format: uuid
+          example: '123e4567-e89b-12d3-a456-426614174000'
+      required:
+        - id
+        - token

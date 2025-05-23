@@ -54,6 +54,8 @@ GEM
     activerecord (7.0.2.4)
       activemodel (= 7.0.2.4)
       activesupport (= 7.0.2.4)
+    activerecord-import (2.1.0)
+      activerecord (>= 4.2)
     activestorage (7.0.2.4)
       actionpack (= 7.0.2.4)
       activejob (= 7.0.2.4)
@@ -111,7 +113,10 @@ GEM
     i18n_data (0.10.0)
     jbuilder (2.10.1)
       activesupport (>= 5.0.0)
+    json (2.12.0)
     json_schema (0.21.0)
+    language_server-protocol (3.17.0.5)
+    lint_roller (1.1.0)
     listen (3.3.3)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -150,9 +155,12 @@ GEM
       racc (~> 1.4)
     observer (0.1.2)
     openapi_parser (0.14.0)
-    parser (3.1.2.0)
+    parallel (1.27.0)
+    parser (3.3.8.0)
       ast (~> 2.4.1)
+      racc
     pg (1.5.9)
+    prism (1.4.0)
     puma (4.3.7)
       nio4r (~> 2.0)
     puma_worker_killer (0.3.1)
@@ -191,10 +199,12 @@ GEM
       rake (>= 12.2)
       thor (~> 1.0)
       zeitwerk (~> 2.5)
+    rainbow (3.1.1)
     rake (13.0.6)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    regexp_parser (2.10.0)
     rspec-core (3.11.0)
       rspec-support (~> 3.11.0)
     rspec-expectations (3.11.0)
@@ -215,6 +225,45 @@ GEM
     rswag-ui (2.5.1)
       actionpack (>= 3.1, < 7.1)
       railties (>= 3.1, < 7.1)
+    rubocop (1.75.6)
+      json (~> 2.3)
+      language_server-protocol (~> 3.17.0.2)
+      lint_roller (~> 1.1.0)
+      parallel (~> 1.10)
+      parser (>= 3.3.0.2)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 2.9.3, < 3.0)
+      rubocop-ast (>= 1.44.0, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 2.4.0, < 4.0)
+    rubocop-ast (1.44.1)
+      parser (>= 3.3.7.2)
+      prism (~> 1.4)
+    rubocop-factory_bot (2.27.1)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.72, >= 1.72.1)
+    rubocop-inflector (1.0.0)
+      activesupport
+      rubocop
+      rubocop-rspec
+    rubocop-performance (1.25.0)
+      lint_roller (~> 1.1)
+      rubocop (>= 1.75.0, < 2.0)
+      rubocop-ast (>= 1.38.0, < 2.0)
+    rubocop-rails (2.32.0)
+      activesupport (>= 4.2.0)
+      lint_roller (~> 1.1)
+      rack (>= 1.1)
+      rubocop (>= 1.75.0, < 2.0)
+      rubocop-ast (>= 1.44.0, < 2.0)
+    rubocop-rspec (3.6.0)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.72, >= 1.72.1)
+    rubocop-rspec_rails (2.31.0)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.72, >= 1.72.1)
+      rubocop-rspec (~> 3.5)
+    ruby-progressbar (1.13.0)
     scout_apm (5.1.1)
       parser
     shoulda-matchers (6.5.0)
@@ -230,6 +279,9 @@ GEM
     timeout (0.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    unicode-display_width (3.1.4)
+      unicode-emoji (~> 4.0, >= 4.0.4)
+    unicode-emoji (4.0.4)
     unicode_utils (1.4.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
@@ -237,11 +289,17 @@ GEM
     will_paginate (3.3.0)
     zeitwerk (2.5.4)
 
+GEM
+  remote: https://rubygems.pkg.github.com/pennylane-hq/
+  specs:
+    config_manager (0.0.26)
+
 PLATFORMS
   ruby
   x86_64-linux
 
 DEPENDENCIES
+  activerecord-import
   barnes
   base64
   bigdecimal
@@ -249,6 +307,7 @@ DEPENDENCIES
   cancancan
   committee
   committee-rails
+  config_manager!
   countries
   drb
   factory_bot_rails
@@ -267,6 +326,13 @@ DEPENDENCIES
   rails (~> 7.0.2)
   rspec-rails
   rswag-ui
+  rubocop
+  rubocop-factory_bot
+  rubocop-inflector
+  rubocop-performance
+  rubocop-rails
+  rubocop-rspec
+  rubocop-rspec_rails
   scout_apm
   shoulda-matchers
   spring

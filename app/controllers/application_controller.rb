@@ -1,9 +1,14 @@
+# frozen_string_literal: true
+
 class ApplicationController < ActionController::API
   load_resource except: %i[schema]
   before_action :set_json_format
   before_action :load_session, prepend: true, except: %i[schema]
 
-  class NoSessionError < Exception
+  class NoSessionError < StandardError
+  end
+
+  class InvalidTokenError < StandardError
   end
 
   def index
@@ -13,8 +18,8 @@ class ApplicationController < ActionController::API
   def schema
     render json: YAML.safe_load(
       File.read(
-        Rails.root.join('schema.yml').to_s,
-      ),
+        Rails.root.join('schema.yml').to_s
+      )
     ).as_json
   end
 
@@ -23,9 +28,9 @@ class ApplicationController < ActionController::API
 
     render(
       json: {
-        message: message,
+        message: message
       },
-      status: :unprocessable_entity,
+      status: :unprocessable_entity
     )
   end
 
@@ -33,14 +38,22 @@ class ApplicationController < ActionController::API
     render(
       json: {
         message: exception.message,
-        details: exception.record.errors.details,
+        details: exception.record.errors.details
       },
-      status: :unprocessable_entity,
+      status: :unprocessable_entity
     )
+  end
+
+  rescue_from ActionController::ParameterMissing do |exception|
+    render plain: exception.message, status: :unprocessable_entity
   end
 
   rescue_from NoSessionError do
     render plain: 'X-SESSION header is missing or invalid', status: :bad_request
+  end
+
+  rescue_from InvalidTokenError do
+    render plain: 'Invalid token', status: :unauthorized
   end
 
   private
@@ -50,13 +63,13 @@ class ApplicationController < ActionController::API
     per_page = (params[:per_page].presence || 25).to_i
     {
       page: page <= 0 ? 1 : page,
-      per_page: per_page <= 0 ? 25 : per_page,
+      per_page: per_page <= 0 ? 25 : per_page
     }
   end
 
   def search_params
     JSON.parse(params[:filter], symbolize_names: true)
-  rescue
+  rescue StandardError
     []
   end
 

@@ -17,4 +17,5 @@ Rails.application.routes.draw do
     end
   end
   resources :invoices, only: %i[index show create update destroy]
+  resources :sessions, only: %i[create]
 end
