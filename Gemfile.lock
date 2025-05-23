@@ -289,6 +289,11 @@ GEM
     will_paginate (3.3.0)
     zeitwerk (2.5.4)
 
+GEM
+  remote: https://rubygems.pkg.github.com/pennylane-hq/
+  specs:
+    config_manager (0.0.26)
+
 PLATFORMS
   ruby
   x86_64-linux
@@ -302,6 +307,7 @@ DEPENDENCIES
   cancancan
   committee
   committee-rails
+  config_manager!
   countries
   drb
   factory_bot_rails

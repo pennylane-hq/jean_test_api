@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
 
   def verify_token!
     token = request.headers['Authorization']&.split&.last
-    return if token == 'Rails.application.credentials.jeancaisse_token'
+    return if token == ConfigManager::Secret.api_tokens.jeancaisse
 
     raise InvalidTokenError
   end

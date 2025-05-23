@@ -30,6 +30,10 @@ gem 'puma_worker_killer'
 gem 'rack-timeout'
 gem 'scout_apm'
 
+source 'https://rubygems.pkg.github.com/pennylane-hq' do
+  gem 'config_manager' 
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
